@@ -3,6 +3,7 @@ package testcases;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeMethod;
+import org.testng.log4testng.Logger;
 import pages.HomePage;
 import comman.CommanFunction;
 import pages.LoginPage;
@@ -29,6 +30,9 @@ public class Login {
     CommanFunction commanFunction;
 
     public static final By signOutButton = By.linkText("Sign out");
+    private String customerName = "Neeraj Bhatngar";
+
+
 
     @BeforeClass
     public void setUp() throws IOException, InterruptedException {
@@ -52,18 +56,20 @@ public class Login {
 
     @Test (priority = 1)
     public void  successFulLogin() {
+
         //myAccountPage = loginPage.successFulLogin(); //successFulLogin is returning myAccount page so we assign it in myAccountPage so that we can use it in next function.
         myAccountPage.checkMyAccountPageExistence();
-        //myAccountPage.clickSignOutButton();
-        //Create Assertion that login is successful.
+        assertTrue(myAccountPage.checkPageExistence(signOutButton), "Sign Out button is present.");
+        assertTrue(myAccountPage.checkMyAccount());
+
     }
 
     @Test (priority = 0)
     public void failedLogin() {
 
-     //       myAccountPage.checkMyAccountPageExistence();
+           // myAccountPage.checkMyAccountPageExistence();
             myAccountPage.checkMyAccount();
-            /*if (myAccountPage.checkPageExistence(signOutButton)==false){
+            if (myAccountPage.checkPageExistence(signOutButton)==false){
      //   if (myAccountPage.checkMyAccountPageExistence()) {
             loginPage.waitForLoginPage();
             loginPage.failedLoginCases();
@@ -71,13 +77,25 @@ public class Login {
             {
                 myAccountPage.clickSignOutButton();
                 loginPage.failedLoginCases();
-
-        }*/
+        }
     }
 
-    @AfterClass
+    @Test
+    public void verifyUserName(){
+        myAccountPage.getCustomerName();
+        assertEquals(customerName, myAccountPage.getCustomerName());
+
+    }
+
+    @Test
+    public void clickTshirtlLink(){
+        myAccountPage.clickTshirtLink();
+        System.out.println("Tshirt link clicked");
+    }
+
+    /*@AfterClass
     public void tearDown(){
         commanFunction.closeDriver();
     }
-
+*/
 }

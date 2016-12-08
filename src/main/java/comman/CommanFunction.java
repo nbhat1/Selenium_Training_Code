@@ -1,5 +1,6 @@
 package comman;
 
+import org.openqa.selenium.interactions.Actions;
 import pages.LoginPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -150,11 +151,23 @@ public class CommanFunction {
 
     /*
   This simple function will click on a locator
-
-   */
+  */
     public void clickOnLocator(By locator) {
         waitForElementToBeVisible(locator).click();
     }
+
+    /**
+     * This fucntoin will click on child element on a menu which presents on mouse hover
+     * MouseHover handling.
+     * Check it with Aditya
+     */
+
+    public void mouseHover(By locator){
+        Actions action = new Actions(getDriver());
+        WebElement element =  waitForElementToBeVisible(locator);
+        action.moveToElement(element).build().perform();
+    }
+
 
     /*
     This simple function will select a radio button.
