@@ -92,16 +92,6 @@ public class MyAccountPage extends CommanFunction{
     }
 
     /**
-     * This method will click in Tshirt link on mouse hover.
-     * @return
-     */
-    public WomenPage clickTshirtLink(){
-        mouseHover(womenLink);
-
-        return new WomenPage(getDriver());
-    }
-
-    /**
      * This method will bring user to home page.
      * @return
      */
