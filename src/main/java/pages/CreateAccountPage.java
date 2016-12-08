@@ -1,6 +1,7 @@
 package pages;
 
 import comman.CommanFunction;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -15,6 +16,7 @@ public class CreateAccountPage extends CommanFunction{
         //this.driver = driver;
     }
 
+    static Logger log = Logger.getLogger( CreateAccountPage.class.getName() );
     private static final By checkAuthenticate = By.cssSelector(".navigation_page");
     private static final By titleMr = By.xpath(".//*[@id='id_gender1']");
     private static final By titleMrs = By.xpath(".//*[@id='id_gender2']");
@@ -114,13 +116,16 @@ public class CreateAccountPage extends CommanFunction{
     This function will select radio button Mr.
      */
     public void selectTitleMr() {
+        log.info( "Selecting Mr Radio Button" );
         selectRadioButton(titleMr);
+
     }
 
     /*
    This function will select radio button Mrs.
     */
     public void selectTitleMrs() {
+        log.info( "Selecting Mrs. Button" );
         selectRadioButton(titleMrs);
     }
 
@@ -183,6 +188,7 @@ public class CreateAccountPage extends CommanFunction{
         waitForElementToBeVisible(firstName);
         waitForElementToBeVisible(lastName);
     }
+
 
 
 }

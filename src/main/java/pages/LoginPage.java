@@ -2,6 +2,7 @@ package pages;
 
 
 import comman.CommanFunction;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -21,6 +22,7 @@ public class LoginPage extends CommanFunction{
     /*
     All locator will be defined underneath.
      */
+    static Logger log = Logger.getLogger(CreateAccountPage.class.getName());
     private static final By selectCreateAccount =By.xpath(".//*[@id='SubmitCreate']");
     private static final By provideEmailToCreateAccount = By.xpath(".//*[@id='email_create']");
     private static final By userName = By.xpath(".//*[@id='email']");
@@ -61,7 +63,7 @@ public class LoginPage extends CommanFunction{
     fillValuesInTextBox is in CommanFunction folder & CommanFunction is extended with this page.
      */
     public void enterEmail(String emailToCreateAccount) {
-
+        log.info( "provide Email address to craete account" );
         fillValuesInTextBox(provideEmailToCreateAccount,emailToCreateAccount);
 
         // Above code cam also be written as
@@ -78,6 +80,7 @@ public class LoginPage extends CommanFunction{
     This function will enter correct user name & password & logs into application successfully.
      */
     public MyAccountPage successFulLogin() {
+        log.info( "Login is successfull" );
         fillValuesInTextBox(userName,validUserName);
         fillValuesInTextBox(password, validPassword);
         clickOnLocator(signInButton);
