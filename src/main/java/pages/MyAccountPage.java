@@ -4,7 +4,6 @@ package pages;
 import comman.CommanFunction;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 /**
  * Created by Neeraj on 26-11-2016.
@@ -25,31 +24,20 @@ public class MyAccountPage extends CommanFunction{
     private static final By tshirtLink = By.xpath(".//*[@id='block_top_menu']/ul/li[1]/ul/li[1]/ul/li[1]/a");
     private static final By homeButton = By.xpath(".//*[@class='icon-chevron-left']");
     private static final By homeIcon = By.xpath(".//*[@class='icon-home']");
-
+    private static final By addressButton = By.xpath(".//*[@title='Addresses']");
+    private static final By addressIcon = By.xpath(".//*[@title='Addresses']/span");
 
     /**
-     * This funtion will check if MyAccountPagePresent. It can be used in Assertion.
+     * This method will check if MyAccountPage is present or not.
      * @return
      */
-    public boolean checkMyAccount()
-    {
-        boolean isMyAccountPagePresent = true;
-        try
-        {
-            WebElement element = waitForElementToBeVisible(authenticateMyAccount);
-            System.out.println("MyAccount checked.");
-            //element.isDisplayed();
-            element.isDisplayed();
-        } catch (Exception ex)
-        {
-            isMyAccountPagePresent = false;
-        }
-        return isMyAccountPagePresent;
+    public boolean isMyAccountPagePresent(){
+       /* boolean isPageExist =  checkPageExistence(signOutButton);
+       return isPageExist;*/
+       return checkPageExistence(signOutButton);
     }
 
-
-
-    /**
+     /**
      * This function will wait for given elements to be visible. So this would avoid wait timeout.It can be use where ever
      * we have to wait for some items to load.
      */
@@ -60,18 +48,13 @@ public class MyAccountPage extends CommanFunction{
     }
 
 
-     public boolean checkPageExistence(By locator){
-
-        boolean isPresent = waitForElementToBeVisible(locator).isDisplayed();
-        return isPresent;
-     }
-
     /**
      * This function will test existence for myAccount Page. This will check if Signout button is present , if yes than my account page is present.
+     * Multiple locators can be given in this function to check if page is actually available.
      */
-
     public void checkMyAccountPageExistence(){
         checkPageExistence(signOutButton);
+        checkPageExistence(authenticateMyAccount);
     }
 
     /*
@@ -95,7 +78,7 @@ public class MyAccountPage extends CommanFunction{
      * This method will bring user to home page.
      * @return
      */
-    public HomePage clickHomeButton(){
+    public HomePage selectHomeButton(){
         clickOnLocator(homeButton);
         return new HomePage(getDriver());
     }
@@ -105,9 +88,26 @@ public class MyAccountPage extends CommanFunction{
      * @return
      */
 
-    public HomePage clickonHomeIcon(){
+    public HomePage selectHomeIcon(){
         clickOnLocator(homeIcon);
         return new HomePage(getDriver());
     }
+
+    /**
+     * This function selects address button to check address of user.
+     */
+    public AddressPage selectAddressButton(){
+        clickOnLocator(addressButton);
+        return new AddressPage(getDriver());
+    }
+
+    /**
+     * This function selects address Icon to check address of user.
+     */
+    public AddressPage selectAddressIcon(){
+        clickOnLocator(addressIcon);
+        return new AddressPage(getDriver());
+    }
+
 
 }

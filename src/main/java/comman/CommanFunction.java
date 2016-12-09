@@ -49,8 +49,8 @@ public class CommanFunction {
         properties.load(obj);
 
     }
-    /*
-    Get data from config file.
+    /**
+     * Get data from config file.
      */
 
     public static String getConfigFileData(String Data) throws IOException {
@@ -61,23 +61,18 @@ public class CommanFunction {
     }
 
 
-    /*
-    This function will invoke application & initialize driver.
+    /**
+     * This function will invoke application & initialize driver.
      */
     public static WebDriver invokeApplication() throws IOException, InterruptedException {
-
-       /* System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"\\GecoDriver\\geckodriver.exe");
-        WebDriver driver = new FirefoxDriver();*/
-        //driver.get(appURL);
-
         String browser = getConfigFileData("browserType"); // Since getConfigFileData is returning String so we use String type variable browser
         driver = selectBrowserToTest(browser); // selectBrowserToTest method is returning driver so we use that driver here.
         driver.get(getConfigFileData("applicationURL")); // driver will invoke application.
         return driver;
     }
 
-    /*
-    Function to select browser from config file.
+    /**
+     * Function to select browser from config file.
      */
 
     public static WebDriver selectBrowserToTest(String browserType) throws IOException {
@@ -86,12 +81,13 @@ public class CommanFunction {
             case "firefox":
                 System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\GecoDriver\\geckodriver.exe");
                 driver = new FirefoxDriver();
-
+                driver.manage().window().maximize();
                 break;
 
             case "chrome":
                 System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\ChromeDriver\\chromedriver.exe");
                 driver = new ChromeDriver();
+                driver.manage().window().maximize();
                 break;
 
                 /*case "IE":
@@ -169,8 +165,8 @@ public class CommanFunction {
     }
 
 
-    /*
-    This simple function will select a radio button.
+    /**
+     * This simple function will select a radio button.
      */
     public void selectRadioButton(By locator) {
         //public boolean checkRadioButtonSelected();
@@ -214,14 +210,19 @@ public class CommanFunction {
         return this.driver;
     }
 
-
+    /**
+     *This method is used to invoke application & click SignIn button on home page.
+     * @return
+     * @throws IOException
+     * @throws InterruptedException
+     */
     public LoginPage clickSignInButton() throws IOException, InterruptedException {
 
         //WebDriver driver;
         driver = invokeApplication();
         WebElement element = driver.findElement(selectSignIn);
         element.click();
-        System.out.println("Sign In button clicked on Home Page.");
+        //System.out.println("Sign In button clicked on Home Page.");
         return new LoginPage(driver);
 
     }
@@ -230,6 +231,24 @@ public class CommanFunction {
         //driver.close();
         //getDriver().close();
         driver.quit();
+    }
+
+    /**
+     * This method will check if page exists. If given locator is present it means page is present.
+     * @param locator
+     * @return
+     */
+    public boolean checkPageExistence(By locator)
+    {
+        boolean isPagePresent = false;
+        try
+        {
+            isPagePresent = waitForElementToBeVisible(locator).isDisplayed();
+        } catch (NoSuchElementException e)
+        {
+            isPagePresent = false;
+        }
+        return isPagePresent;
     }
 
 

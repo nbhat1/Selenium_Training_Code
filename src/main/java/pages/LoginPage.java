@@ -29,6 +29,7 @@ public class LoginPage extends CommanFunction{
     private static final By password = By.cssSelector("#passwd");
     private static final By signInButton = By.cssSelector("#SubmitLogin");
 
+
     /*
     All variables will be defined here.
      */
@@ -80,7 +81,7 @@ public class LoginPage extends CommanFunction{
     This function will enter correct user name & password & logs into application successfully.
      */
     public MyAccountPage successFulLogin() {
-        log.info( "Login is successfull" );
+        log.info( "userLogin is successfull" );
         fillValuesInTextBox(userName,validUserName);
         fillValuesInTextBox(password, validPassword);
         clickOnLocator(signInButton);
@@ -155,9 +156,8 @@ public class LoginPage extends CommanFunction{
 
     }
     /**
-     * This function will wait for given elemenst to be visible.
+     * This function will wait for given element to be visible.
     */
-
     public void waitForLoginPage(){
         waitForElementToBeVisible(selectCreateAccount);
         waitForElementToBeVisible(provideEmailToCreateAccount);
@@ -174,6 +174,9 @@ public class LoginPage extends CommanFunction{
         failedLoginInvalidUserValidPassword();
         failedLoginValidUserInvalidPassword();
     }
+
+
+
 
 }
 

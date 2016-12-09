@@ -69,22 +69,6 @@ public class CreateAccountPage extends CommanFunction{
     private String yearsDOBValue = "1981";
 
 
-    public boolean checkRegPage()
-    {
-        //System.out.println("reference of driver in CreateAccountPgae" + driver);
-        boolean isRegPagePresent = true;
-        try {
-            WebElement element = driver.findElement(checkAuthenticate);
-            System.out.println("Authentication checked.");
-            //element.isDisplayed();
-            element.isDisplayed();
-        } catch (Exception ex) {
-            isRegPagePresent = false;
-        }
-        return isRegPagePresent;
-
-    }
-
    /*
     This function will fill registration form.A String type variable is being used in sendKeys method.
     This variable is defined in class. we can use fillAccountInformation or fillAccountForm to complete account form.
@@ -187,6 +171,14 @@ public class CreateAccountPage extends CommanFunction{
     public void waitForCreateAccountPageToLoad(){
         waitForElementToBeVisible(firstName);
         waitForElementToBeVisible(lastName);
+    }
+
+    /**
+     * This function checks if createAccount page is present. If given locator is present it means page is present.
+     * @return
+     */
+    public boolean isCreateAccountPagePresent(){
+        return checkPageExistence(checkAuthenticate);
     }
 
 

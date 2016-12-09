@@ -3,10 +3,8 @@
 <suite name="Suite1" verbose="1" >
     <test name="SignIn And Login" >
         <classes>
-            <class name="testcases.SignInButton" />
-
-            <class name="testcases.Login" />
-
+            <class name="testcases.TC001_SignInButton" />
+            <class name="testcases.TC003_Login" />
         </classes>
     </test>
 

@@ -16,7 +16,7 @@ import static org.testng.Assert.*;
 /**
  * Created by neeraj.bhatnagar on 11/22/2016.
  */
-public class SignInButton {
+public class TC001_SignInButton {
 
     WebDriver driver ;
     //HomePage home;
@@ -26,23 +26,17 @@ public class SignInButton {
 
     @BeforeClass
     public void setUp(){
-
-        //home = new HomePage(driver);
         commanFunction = new CommanFunction(driver);
-
-    }
+   }
 
     // This method will click on Sign in button on login page.
     @Test
     public void clickSignInNavigateHomePage() throws InterruptedException, IOException {
         loginPage = commanFunction.clickSignInButton();
-        //System.out.println("Sign In button clicked.");
-
-        Thread.sleep(10000);
-        assertTrue(loginPage.checkCreateAccount());
+        //Thread.sleep(10000);
+        loginPage.waitForLoginPage();
+        assertTrue(loginPage.checkCreateAccount(), "Craete account button is visible.");
         }
-
-
 
      @AfterClass
     public void tearDown(){

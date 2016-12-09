@@ -8,6 +8,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
+import pages.MyAccountPage;
 
 import java.io.IOException;
 
@@ -18,12 +19,13 @@ import static org.testng.Assert.assertTrue;
  */
 
 
-public class RegisterNewUser {
+public class TC002_RegisterNewUser {
     WebDriver driver;
     //HomePage home = new HomePage(driver);
     HomePage homePage;
     LoginPage loginPage;
     CreateAccountPage createAccount;
+    MyAccountPage myAccount;
     CommanFunction commanFunction;
 
     String emailToCreateAccount = "neerajunlimited@gmail.com";
@@ -33,18 +35,16 @@ public class RegisterNewUser {
 
         commanFunction = new CommanFunction(driver);
         loginPage = commanFunction.clickSignInButton();
-
-
     }
+
 
     @Test(priority = 0)
     public void enterEmailForUser() throws InterruptedException {
-
         loginPage.enterEmail(emailToCreateAccount);
         createAccount = loginPage.clickCreateAccountButton();
         createAccount.waitForCreateAccountPageToLoad();
-        //Thread.sleep(10000); waitForCreateAccountPageToLoad function is waorking instead of hard coded wait.
-        assertTrue(createAccount.checkRegPage(), "check registration page should return true");
+        //Thread.sleep(10000); waitForCreateAccountPageToLoad function is worrking instead of hard coded wait.
+        assertTrue(createAccount.isCreateAccountPagePresent(), "Create account page is present" );
     }
 
     @Test(priority = 1)
@@ -59,8 +59,9 @@ public class RegisterNewUser {
         createAccount.selectMonthsDOB();
         createAccount.selectYearsDOB();
         createAccount.selectRegisterButton();
-        //createAccount.checkRegPage();
-        assertTrue(createAccount.checkRegPage());
+        myAccount.isMyAccountPagePresent();
+        assertTrue(myAccount.isMyAccountPagePresent(), "My account page returns true");
+
     }
 
     @AfterClass
