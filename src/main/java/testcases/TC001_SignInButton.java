@@ -35,7 +35,7 @@ public class TC001_SignInButton {
         loginPage = commanFunction.clickSignInButton();
         //Thread.sleep(10000);
         loginPage.waitForLoginPage();
-        assertTrue(loginPage.checkCreateAccount(), "Craete account button is visible.");
+        assertTrue(loginPage.checkCreateAccount(), "Create account button is not visible.");
         }
 
      @AfterClass

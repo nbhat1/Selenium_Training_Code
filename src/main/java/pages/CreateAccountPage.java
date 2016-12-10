@@ -6,6 +6,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.io.IOException;
+
+import static org.testng.Assert.*;
+
 /**
  * Created by neeraj.bhatnagar on 11/24/2016.
  */
@@ -159,7 +163,7 @@ public class CreateAccountPage extends CommanFunction{
     This function will click on Register button after filling new user
     form.
      */
-    public MyAccountPage selectRegisterButton() {
+    public MyAccountPage selectRegisterButton() throws IOException{
         clickOnLocator(Register_Button);
         return new MyAccountPage(getDriver());
     }
@@ -169,8 +173,9 @@ public class CreateAccountPage extends CommanFunction{
      * we have to wait for some items to load.
      */
     public void waitForCreateAccountPageToLoad(){
-        waitForElementToBeVisible(firstName);
+        //assertEquals( waitForElementToBeVisible(firstName).getText(),"Expected" ," Text doesn't match");
         waitForElementToBeVisible(lastName);
+
     }
 
     /**

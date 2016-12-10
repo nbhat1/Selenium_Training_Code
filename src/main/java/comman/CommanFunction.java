@@ -26,9 +26,9 @@ public class CommanFunction {
 
     protected static WebDriver driver;
     protected static int waitForElementPresentTimeout = 40;
-    private static String appURL = "http://automationpractice.com/index.php";
+    //private static String appURL = "http://automationpractice.com/index.php";
     private static final By selectSignIn = By.xpath(".//*[@class='login']");
-    public static final By signOutButton = By.linkText("Sign out");
+    //public static final By signOutButton = By.linkText("Sign out");
     static Properties properties;
 
     public CommanFunction(WebDriver driver) {
@@ -53,13 +53,28 @@ public class CommanFunction {
      * Get data from config file.
      */
 
-    public static String getConfigFileData(String Data) throws IOException {
+    /*public static String getConfigFileData(String Data) throws IOException {
+
         LoadConfigFile();
         String data = properties.getProperty(Data);
         // System.out.println(data);
         return data;
-    }
+    }*/
 
+    public static String getConfigFileData(String Data) throws IOException {
+        String data=null;
+        try {
+            LoadConfigFile();
+            data = properties.getProperty(Data);
+        } catch(FileNotFoundException e) {
+            System.out.println("File not found.");
+        } catch (IOException e) {
+            e.printStackTrace();
+
+        }
+        // System.out.println(data);
+        return data;
+    }
 
     /**
      * This function will invoke application & initialize driver.
@@ -70,6 +85,16 @@ public class CommanFunction {
         driver.get(getConfigFileData("applicationURL")); // driver will invoke application.
         return driver;
     }
+
+     /*
+    This simple function will pass values in text boxes. using locator & text. Usage of this locator can be found in
+     Login Page & CreateAccount Page.
+     */
+     public void fillValuesInTextBox(By locator, String textBoxData) {
+        waitForElementToBeVisible(locator).clear();
+        waitForElementToBeVisible(locator).sendKeys(textBoxData);
+    }
+
 
     /**
      * Function to select browser from config file.
@@ -136,16 +161,7 @@ public class CommanFunction {
         return element;
     }
 
-    /*
-    This simple function will pass values in text boxes. using locator & text. Usage of this locator can be found in
-     CreateAccountPage.
-     */
-    public void fillValuesInTextBox(By locator, String textBoxData) {
-        waitForElementToBeVisible(locator).clear();
-        waitForElementToBeVisible(locator).sendKeys(textBoxData);
-    }
-
-    /*
+   /*
   This simple function will click on a locator
   */
     public void clickOnLocator(By locator) {
@@ -244,6 +260,7 @@ public class CommanFunction {
         try
         {
             isPagePresent = waitForElementToBeVisible(locator).isDisplayed();
+
         } catch (NoSuchElementException e)
         {
             isPagePresent = false;

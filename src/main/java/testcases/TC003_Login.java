@@ -47,17 +47,21 @@ public class TC003_Login {
 
     }*/
 
-    @Test (priority = 1)
+    @Test (priority = 0)
     public void  successFulLogin() {
 
-        myAccountPage = loginPage.successFulLogin(); //successFulLogin is returning myAccount page so we assign it in myAccountPage so that we can use it in next function.
+        try {
+            myAccountPage = loginPage.successFulLogin(); //successFulLogin is returning myAccount page so we assign it in myAccountPage so that we can use it in next function.
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         myAccountPage.checkMyAccountPageExistence();
         assertTrue(myAccountPage.isMyAccountPagePresent(),"Login is successful. My account page is present");
 
     }
 
-    @Test (priority = 0, dependsOnMethods = {"successFulLogin"})
-    public void failedLogin() {
+    @Test (priority = 2)
+    public void failedLogin() throws IOException {
 
           // myAccountPage.checkMyAccountPageExistence();
            // myAccountPage.checkMyAccount();
@@ -72,10 +76,13 @@ public class TC003_Login {
         }
     }
 
-    @Test(priority = 3, dependsOnMethods = {"successFulLogin"} )
+    @Test(priority = 1, dependsOnMethods = {"successFulLogin"} )
     public void verifyUserName(){
-        myAccountPage.getCustomerName();
-        assertEquals(customerName, myAccountPage.getCustomerName());
+       // myAccountPage.getCustomerName();
+        //assertEquals(customerName, myAccountPage.getCustomerName());
+        assertEquals( myAccountPage.userNameValue, myAccountPage.getCustomerName(), "User name value do not match.Please check test again." );
+        // Can be writtten as with assertion
+        //assertEquals(customerName, myAccountPage.getCustomerName(),"" );
 
     }
 /*

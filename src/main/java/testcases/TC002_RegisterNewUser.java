@@ -48,8 +48,8 @@ public class TC002_RegisterNewUser {
     }
 
     @Test(priority = 1)
-    public void createNewUser() throws InterruptedException {
-        enterEmailForUser();
+    public void createNewUser() throws InterruptedException, IOException {
+
         createAccount.selectTitleMr();
         createAccount.fillAccountForm();
         createAccount.checkPreFilledEmail();
@@ -60,7 +60,7 @@ public class TC002_RegisterNewUser {
         createAccount.selectYearsDOB();
         createAccount.selectRegisterButton();
         myAccount.isMyAccountPagePresent();
-        assertTrue(myAccount.isMyAccountPagePresent(), "My account page returns true");
+        assertTrue(myAccount.isMyAccountPagePresent(), "My account page returns false");
 
     }
 

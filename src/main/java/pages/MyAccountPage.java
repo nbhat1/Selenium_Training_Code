@@ -4,6 +4,7 @@ package pages;
 import comman.CommanFunction;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import java.io.IOException;
 
 /**
  * Created by Neeraj on 26-11-2016.
@@ -12,7 +13,7 @@ public class MyAccountPage extends CommanFunction{
 
     //WebDriver driver;
 
-        public MyAccountPage(WebDriver driver) {
+        public MyAccountPage(WebDriver driver) throws IOException {
         super(driver);
         //this.driver = driver;
     }
@@ -26,6 +27,8 @@ public class MyAccountPage extends CommanFunction{
     private static final By homeIcon = By.xpath(".//*[@class='icon-home']");
     private static final By addressButton = By.xpath(".//*[@title='Addresses']");
     private static final By addressIcon = By.xpath(".//*[@title='Addresses']/span");
+
+    public String userNameValue = getConfigFileData("userNameValue");
 
     /**
      * This method will check if MyAccountPage is present or not.
@@ -60,7 +63,7 @@ public class MyAccountPage extends CommanFunction{
     /*
     *This function will sign out user & would return driver reference of next page.
     */
-    public LoginPage clickSignOutButton(){
+    public LoginPage clickSignOutButton() throws IOException {
         clickOnLocator(signOutButton);
         return new LoginPage(getDriver());
     }

@@ -7,6 +7,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.io.IOException;
+
+import static org.testng.Assert.*;
 /**
  * Created by neeraj.bhatnagar on 11/23/2016.
  */
@@ -14,8 +17,7 @@ public class LoginPage extends CommanFunction{
 
     //WebDriver driver;
 
-    public LoginPage(WebDriver driver)
-    {
+    public LoginPage(WebDriver driver) throws IOException {
         super(driver);
         //this.driver = driver;
     }
@@ -31,16 +33,17 @@ public class LoginPage extends CommanFunction{
 
 
     /*
-    All variables will be defined here.
+    All variables will be defined here. These variables are defined in config.properties file & called by getConfigFileData method from CommanFunction page.
      */
-    private String validUserName = "neeraj2016@gmail.com";
-    private String invalidUserName = "neeraj232323@gmail.com";
-    private String validPassword = "Password1";
-    private String invalidPassword = "Password123";
+    private String validUserName = getConfigFileData("validUserName");
+    private String invalidUserName = getConfigFileData("invalidUserName");
+    private String validPassword = getConfigFileData("validPassword");
+    private String invalidPassword = getConfigFileData("invalidPassword");
+
 
 
    /*
-    This funtion will check if Craete an Account button is visible on loginPage after clicking signIn button on Home page.
+    This funtion will check if Create an Account button is visible on loginPage after clicking signIn button on Home page.
     This is validation to check if user landed on correct page after clicking Signin button.
      */
     public boolean checkCreateAccount() throws InterruptedException {
@@ -80,7 +83,7 @@ public class LoginPage extends CommanFunction{
     /*
     This function will enter correct user name & password & logs into application successfully.
      */
-    public MyAccountPage successFulLogin() {
+    public MyAccountPage successFulLogin() throws IOException {
         log.info( "userLogin is successfull" );
         fillValuesInTextBox(userName,validUserName);
         fillValuesInTextBox(password, validPassword);
@@ -168,11 +171,22 @@ public class LoginPage extends CommanFunction{
     /**
      * This method contains failed login scenarios.
      */
-    public void failedLoginCases(){
-        failedLoginInvalidUserInvalidPassword();
-        //assertTrue(loginPage.wrongPasswordErrorVerification());
-        failedLoginInvalidUserValidPassword();
-        failedLoginValidUserInvalidPassword();
+    public boolean failedLoginCases(){
+
+        boolean isSuccess = true;
+
+        try {
+            failedLoginInvalidUserInvalidPassword();
+            //assertTrue(loginPage.wrongPasswordErrorVerification());
+            failedLoginInvalidUserValidPassword();
+            failedLoginValidUserInvalidPassword();
+
+        }
+        catch (Exception e){
+
+            isSuccess = false;
+        }
+        return isSuccess;
     }
 
 
