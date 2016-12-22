@@ -81,6 +81,7 @@ public class CreateAccountPage extends CommanFunction{
         waitForElementToBeVisible(lastName).sendKeys(userLastName);
     }*/
     public void fillAccountForm() {
+        log.info( "Registration page data entries started" );
         fillValuesInTextBox(firstName, firstNameValue);
         fillValuesInTextBox(lastName, lastNameValue);
         fillValuesInTextBox(password,passwordValue);
@@ -95,6 +96,7 @@ public class CreateAccountPage extends CommanFunction{
         fillValuesInTextBox(address_Home_Phone,addressHomePhone);
         fillValuesInTextBox(address_Mobile_Phone,addressMobile);
         fillValuesInTextBox(address_alias,addressAlias);
+        log.info( "Registration page data entries ended." );
    }
 
     /*
@@ -118,6 +120,7 @@ public class CreateAccountPage extends CommanFunction{
     This function will check if preFilled email is matching with email entered in LoginPage.
      */
     public void checkPreFilledEmail() {
+        log.info( "Checking if Prefilled EMail entry is matching." );
         checkPreFilledTextBoxEntries(emailofUser,emailToCreateAccount);
     }
 
@@ -125,6 +128,7 @@ public class CreateAccountPage extends CommanFunction{
     This function will select newsletter checkbox.
      */
     public void selectNewsLetter() {
+        log.info( "NewsLetter Checkbox selected" );
         selectRadioButton(signUpNewsleterCheckBox);
     }
 
@@ -132,6 +136,7 @@ public class CreateAccountPage extends CommanFunction{
    This function will select offers checkbox.
     */
     public void selectOffers() {
+        log.info( "Offers Checkbox selected" );
         selectRadioButton(specialOffersCheckBox);
     }
 
@@ -139,6 +144,7 @@ public class CreateAccountPage extends CommanFunction{
     This function will select Day in DOB field
     */
     public void selectDayDOB() {
+        log.info( "Day Selected in DOB" );
         selectValueFromDropDownList(days_DOB,daysDOBValue);
     }
 
@@ -146,6 +152,7 @@ public class CreateAccountPage extends CommanFunction{
     This function will select Month in DOB field
     */
     public void selectMonthsDOB() {
+        log.info( "Month Selected in DOB" );
         selectValueFromDropDownList(months_DOB,monthsDOBValue);
     }
 
@@ -153,6 +160,7 @@ public class CreateAccountPage extends CommanFunction{
     This function will select Year in DOB field
     */
     public void selectYearsDOB() {
+        log.info( "Year Selected in DOB" );
         selectValueFromDropDownList(years_DOB,yearsDOBValue);
     }
 
@@ -161,6 +169,7 @@ public class CreateAccountPage extends CommanFunction{
     form.
      */
     public MyAccountPage selectRegisterButton() throws IOException{
+        log.info( "Register new user button selected." );
         clickOnLocator(Register_Button);
         return new MyAccountPage(getDriver());
     }
@@ -180,6 +189,7 @@ public class CreateAccountPage extends CommanFunction{
      * @return
      */
     public boolean isCreateAccountPagePresent(){
+        log.info( "Checking if Create Account page is present." );
         return checkPageExistence(checkAuthenticate);
     }
 

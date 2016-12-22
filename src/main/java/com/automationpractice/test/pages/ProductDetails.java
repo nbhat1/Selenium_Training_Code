@@ -6,4 +6,5 @@ package com.automationpractice.test.pages;
  * This page is about product details.Since All products are on same page we are not creating different pages.
  */
 public class ProductDetails {
+
 }

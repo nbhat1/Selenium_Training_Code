@@ -1,19 +1,20 @@
 package com.automationpractice.test.common;
 
-import org.openqa.selenium.ElementNotVisibleException;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import com.automationpractice.test.pages.LoginPage;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utilities.ExcelUtils;
 
 import java.io.*;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 import java.util.NoSuchElementException;
 import java.util.Properties;
 
@@ -24,13 +25,17 @@ import java.util.Properties;
 public class CommanFunction {
     //public static WebDriver driver=null;
 
-    protected static WebDriver driver;
+    public static WebDriver driver;
     protected static int waitForElementPresentTimeout = 40;
     //private static String appURL = "http://automationpractice.com/index.php";
     private static final By selectSignIn = By.xpath(".//*[@class='login']");
     //public static final By signOutButton = By.linkText("Sign out");
     static Properties properties;
+    public static String mailscreenshotpath;
 
+    public CommanFunction() {
+
+    }
 
     public CommanFunction(WebDriver driver) {
         this.driver = driver;
@@ -57,7 +62,7 @@ public class CommanFunction {
 
     public static void loadTestDataFile() throws Exception {
         //ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData,"Sheet1");
-        ExcelUtils.setExcelFile(System.getProperty("user.dir")+"\\testdata\\testData.xlsx","Sheet1");
+        ExcelUtils.setExcelFile(System.getProperty("user.dir") + "\\testdata\\testData.xlsx", "testDataSheet");
 
     }
 
@@ -72,13 +77,12 @@ public class CommanFunction {
         // System.out.println(data);
         return data;
     }*/
-
     public static String getConfigFileData(String Data) throws IOException {
-        String data=null;
+        String data = null;
         try {
             LoadConfigFile();
             data = properties.getProperty(Data);
-        } catch(FileNotFoundException e) {
+        } catch (FileNotFoundException e) {
             System.out.println("File not found.");
         } catch (IOException e) {
             e.printStackTrace();
@@ -98,11 +102,11 @@ public class CommanFunction {
         return driver;
     }
 
-     /*
-    This simple function will pass values in text boxes. using locator & text. Usage of this locator can be found in
-     Login Page & CreateAccount Page.
-     */
-     public void fillValuesInTextBox(By locator, String textBoxData) {
+    /*
+   This simple function will pass values in text boxes. using locator & text. Usage of this locator can be found in
+    Login Page & CreateAccount Page.
+    */
+    public void fillValuesInTextBox(By locator, String textBoxData) {
         waitForElementToBeVisible(locator).clear();
         waitForElementToBeVisible(locator).sendKeys(textBoxData);
     }
@@ -173,9 +177,9 @@ public class CommanFunction {
         return element;
     }
 
-   /*
-  This simple function will click on a locator
-  */
+    /*
+   This simple function will click on a locator
+   */
     public void clickOnLocator(By locator) {
         waitForElementToBeVisible(locator).click();
     }
@@ -186,9 +190,9 @@ public class CommanFunction {
      * Check it with Aditya
      */
 
-    public void mouseHover(By locator){
+    public void mouseHover(By locator) {
         Actions action = new Actions(getDriver());
-        WebElement element =  waitForElementToBeVisible(locator);
+        WebElement element = waitForElementToBeVisible(locator);
         action.moveToElement(element).build().perform();
     }
 
@@ -239,7 +243,8 @@ public class CommanFunction {
     }
 
     /**
-     *This method is used to invoke application & click SignIn button on home page.
+     * This method is used to invoke application & click SignIn button on home page.
+     *
      * @return
      * @throws IOException
      * @throws InterruptedException
@@ -263,20 +268,20 @@ public class CommanFunction {
 
     /**
      * This method will check if page exists. If given locator is present it means page is present.
+     *
      * @param locator
      * @return
      */
-    public boolean checkPageExistence(By locator)
-    {
+    public boolean checkPageExistence(By locator) {
+
         boolean isPagePresent = false;
-        try
-        {
+        try {
             isPagePresent = waitForElementToBeVisible(locator).isDisplayed();
 
-        } catch (NoSuchElementException e)
-        {
+        } catch (NoSuchElementException e) {
             isPagePresent = false;
         }
+
         return isPagePresent;
     }
 
@@ -285,11 +290,11 @@ public class CommanFunction {
      * Precondition to this is that logo should be present in header.
      */
 
-    public boolean checkLogo(By locator){
+    public boolean checkLogo(By locator) {
 
         boolean isLogoPresent = false;
         try {
-            waitForElementToBeVisible( locator );
+            waitForElementToBeVisible(locator);
         } catch (NoSuchElementException e) {
             isLogoPresent = false;
         }
@@ -300,19 +305,52 @@ public class CommanFunction {
     /**
      * This function will use Action class to mouse hover an element.
      */
-    public String clickOnLinkOnMouseHover(By locator){
+    public String getTextOfLinkOnMouseHover(By locator) {
         String text = null;
         try {
             Actions actions = new Actions(getDriver());
             WebElement headerHoverLink = waitForElementToBeVisible(locator);
             actions.moveToElement(headerHoverLink).perform();
             text = waitForElementToBeVisible(locator).getText();
-            System.out.println( "Tool tip is :" + " " + text );
         } catch (ElementNotVisibleException e) {
-            System.out.println( "Element not present on page" );
+            System.out.println("Element which user wants to hover over is not present on page");
 
         }
         return text;
+    }
+
+
+    /**
+     * This function will use Action class to mouse hover an element & click on it.
+     */
+    public void clickOnLinkAfterMouseHover(By locator) {
+
+        try {
+            Actions actions = new Actions(getDriver());
+            WebElement headerHoverLink = waitForElementToBeVisible(locator);
+            actions.moveToElement(headerHoverLink).perform();
+            waitForElementToBeVisible(locator).click();
+        } catch (ElementNotVisibleException e) {
+            System.out.println("Element which user wants to hover over is not present on page");
+
+        }
+
+    }
+
+    /**
+     * This function will use Action class to mouse hover an element.
+     */
+    public void mouseHoverOnElement(By locator) {
+
+        try {
+            Actions actions = new Actions(getDriver());
+            WebElement headerHoverLink = waitForElementToBeVisible(locator);
+            actions.moveToElement(headerHoverLink).perform();
+        } catch (ElementNotVisibleException e) {
+            System.out.println("Element which user wants to hover over is not present on page");
+
+        }
+
     }
 
 
@@ -322,14 +360,41 @@ public class CommanFunction {
     public String textOfLocator(By locator) {
         String text = null;
         try {
-            text = waitForElementToBeVisible( locator ).getText();
-            System.out.println("Tool tip is :"+ " " + text);
+            text = waitForElementToBeVisible(locator).getText();
+            System.out.println("Tool tip is :" + " " + text);
 
         } catch (ElementNotVisibleException e) {
-            System.out.println( "Element not present on page" );
+            System.out.println("Element not present on page");
 
         }
         return text;
+    }
+
+    /**
+     * This function will capture screenshot & & will store it in project directory under Screenshots folder.
+     *
+     * @param methodName
+     * @throws IOException
+     */
+    public static void captureScreenshot(String methodName) throws IOException {
+
+        Calendar cal = new GregorianCalendar();
+        int month = cal.get(Calendar.MONTH);
+        int year = cal.get(Calendar.YEAR);
+        int sec = cal.get(Calendar.SECOND);
+        int min = cal.get(Calendar.MINUTE);
+        int date = cal.get(Calendar.DATE);
+        int day = cal.get(Calendar.HOUR_OF_DAY);
+
+        File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        try {
+            mailscreenshotpath = System.getProperty("user.dir") + "\\Screenshots\\" + methodName + "_" + year + "_" + date + "_" + (month + 1) + "_" + day + "_" + min + "_" + sec + ".jpeg";
+            FileUtils.copyFile(scrFile, new File(mailscreenshotpath));
+        } catch (IOException e) {
+
+            e.getMessage();
+        }
+
     }
 
 }

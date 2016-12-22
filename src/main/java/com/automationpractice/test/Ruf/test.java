@@ -18,12 +18,10 @@ public class test {
 
     static WebDriver driver;
 
-@Test
-
+    @Test
     public static void mouseHover() throws InterruptedException {
         System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\GecoDriver\\geckodriver.exe");
         driver = new FirefoxDriver();
-
         driver.get( "http://automationpractice.com/index.php" );
         WebElement element = driver.findElement(By.xpath(".//*[@id='block_top_menu']/ul/li[1]/a"));
         System.out.println("Tool tip text on Women is " + element.getText());
@@ -33,7 +31,6 @@ public class test {
         actions.moveToElement(element).perform();
         WebElement toolTipText = driver.findElement(By.xpath( ".//*[@id='block_top_menu']/ul/li[1]/ul/li[1]/ul/li[1]/a" ));
         System.out.println(toolTipText);
-
     }
 
     @Test
@@ -48,11 +45,6 @@ public class test {
         Thread.sleep( 2000 );
         String text = driver.findElement( By.xpath( ".//*[@id='product']/div[3]/div/div/div/div/p" ) ).getText();
         driver.findElement( By.xpath( ".//*[@id='product']/div[3]/div/div/a" ) );
-
-
-
-
-
     }
 
 }

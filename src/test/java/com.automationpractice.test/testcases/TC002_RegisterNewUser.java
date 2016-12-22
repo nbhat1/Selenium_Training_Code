@@ -4,6 +4,7 @@ import com.automationpractice.test.common.CommanFunction;
 import com.automationpractice.test.pages.CreateAccountPage;
 import com.automationpractice.test.pages.HomePage;
 import com.automationpractice.test.pages.LoginPage;
+import org.apache.log4j.xml.DOMConfigurator;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -35,6 +36,7 @@ public class TC002_RegisterNewUser {
 
         commanFunction = new CommanFunction(driver);
         loginPage = commanFunction.clickSignInButton();
+        DOMConfigurator.configure("src/test/log4j.xml");
     }
 
 

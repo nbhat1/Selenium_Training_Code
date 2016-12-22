@@ -1,6 +1,7 @@
 package com.automationpractice.test.pages;
 
 import com.automationpractice.test.common.CommanFunction;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 
 /**
@@ -15,5 +16,6 @@ public class HomePage extends CommanFunction
         super(driver);
     }
     //public static final By selectSignIn=By.xpath(".//*[@class='login']");
+    static Logger log = Logger.getLogger(CreateAccountPage.class.getName());
 
 }

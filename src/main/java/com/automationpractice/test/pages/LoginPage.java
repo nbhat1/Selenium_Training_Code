@@ -20,11 +20,12 @@ public class LoginPage extends CommanFunction {
         super(driver);
         //this.driver = driver;
     }
+
     /*
     All locator will be defined underneath.
      */
     static Logger log = Logger.getLogger(CreateAccountPage.class.getName());
-    private static final By selectCreateAccount =By.xpath(".//*[@id='SubmitCreate']");
+    private static final By selectCreateAccount = By.xpath(".//*[@id='SubmitCreate']");
     private static final By provideEmailToCreateAccount = By.xpath(".//*[@id='email_create']");
     private static final By userName = By.xpath(".//*[@id='email']");
     private static final By password = By.cssSelector("#passwd");
@@ -40,24 +41,21 @@ public class LoginPage extends CommanFunction {
     private String invalidPassword = getConfigFileData("invalidPassword");
 
 
-
-   /*
-    This funtion will check if Create an Account button is visible on loginPage after clicking signIn button on Home page.
-    This is validation to check if user landed on correct page after clicking Signin button.
-     */
+    /*
+     This funtion will check if Create an Account button is visible on loginPage after clicking signIn button on Home page.
+     This is validation to check if user landed on correct page after clicking Signin button.
+      */
     public boolean checkCreateAccount() throws InterruptedException {
-       // Thread.sleep(10000);
-            boolean isLoginPagePresent = true ;
+        // Thread.sleep(10000);
+        boolean isLoginPagePresent = true;
         try {
             WebElement element = driver.findElement(selectCreateAccount);
             element.isDisplayed();
-        }
-        catch (Exception ex){
+        } catch (Exception ex) {
             isLoginPagePresent = false;
         }
         return isLoginPagePresent;
     }
-
 
 
     /*
@@ -66,8 +64,9 @@ public class LoginPage extends CommanFunction {
     fillValuesInTextBox is in CommanFunction folder & CommanFunction is extended with this page.
      */
     public void enterEmail(String emailToCreateAccount) {
-        //log.info( "provide Email address to craete account" );
-        fillValuesInTextBox(provideEmailToCreateAccount,emailToCreateAccount);
+
+        log.info("provide Email address to create account");
+        fillValuesInTextBox(provideEmailToCreateAccount, emailToCreateAccount);
 
         // Above code cam also be written as
 
@@ -83,10 +82,10 @@ public class LoginPage extends CommanFunction {
     This function will enter correct user name & password & logs into application successfully.
      */
     public MyAccountPage successFulLogin() throws IOException {
-        log.info( "userLogin is successfull" );
-        fillValuesInTextBox(userName,validUserName);
+        fillValuesInTextBox(userName, validUserName);
         fillValuesInTextBox(password, validPassword);
         clickOnLocator(signInButton);
+        log.info("Verify login functionality with valid username & password.");
         return new MyAccountPage(driver);
     }
 
@@ -94,18 +93,21 @@ public class LoginPage extends CommanFunction {
     This function is to test failed login scenarios & check error messages.
      */
     public void failedLoginInvalidUserValidPassword() {
-        fillValuesInTextBox(userName,invalidUserName);
-        fillValuesInTextBox(password,validPassword);
+
+        fillValuesInTextBox(userName, invalidUserName);
+        fillValuesInTextBox(password, validPassword);
         clickOnLocator(signInButton);
+        log.info("Verify login functionality with invalid username & valid password");
     }
 
     /*
    This function is to test failed login scenarios & check error messages.
     */
     public void failedLoginInvalidUserInvalidPassword() {
-        fillValuesInTextBox(userName,invalidUserName);
-        fillValuesInTextBox(password,invalidPassword);
+        fillValuesInTextBox(userName, invalidUserName);
+        fillValuesInTextBox(password, invalidPassword);
         clickOnLocator(signInButton);
+        log.info("Verify login functionality with invalid username & invalid password");
 
     }
 
@@ -128,9 +130,10 @@ public class LoginPage extends CommanFunction {
    This function is to test failed login scenarios & check error messages.
     */
     public void failedLoginValidUserInvalidPassword() {
-        fillValuesInTextBox(userName,invalidUserName);
-        fillValuesInTextBox(password,validPassword);
+        fillValuesInTextBox(userName, invalidUserName);
+        fillValuesInTextBox(password, validPassword);
         clickOnLocator(signInButton);
+        log.info("Verify login functionality with invalid username & valid password");
 
 
     }
@@ -148,47 +151,49 @@ public class LoginPage extends CommanFunction {
        ***********************************************************
      */
 
-    public CreateAccountPage clickCreateAccountButton(){
+    public CreateAccountPage clickCreateAccountButton() {
 
         clickOnLocator(selectCreateAccount);
+        log.info("Select Create Account button to create new user.");
         return new CreateAccountPage(getDriver());
 
         // Above code can also be written as
 
 
     }
+
     /**
      * This function will wait for given element to be visible.
-    */
-    public void waitForLoginPage(){
+     */
+    public void waitForLoginPage() {
+        log.info("Waiting for login page to load.");
         waitForElementToBeVisible(selectCreateAccount);
         waitForElementToBeVisible(provideEmailToCreateAccount);
         waitForElementToBeVisible(userName);
+
 
     }
 
     /**
      * This method contains failed login scenarios.
      */
-    public boolean failedLoginCases(){
+    public boolean failedLoginCases() {
 
         boolean isSuccess = true;
 
         try {
+            log.info("Test Cases for failed login scenarios started.");
             failedLoginInvalidUserInvalidPassword();
             //assertTrue(loginPage.wrongPasswordErrorVerification());
             failedLoginInvalidUserValidPassword();
             failedLoginValidUserInvalidPassword();
 
-        }
-        catch (Exception e){
+        } catch (Exception e) {
 
             isSuccess = false;
         }
         return isSuccess;
     }
-
-
 
 
 }

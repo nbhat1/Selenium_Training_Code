@@ -22,7 +22,6 @@ import static org.testng.Assert.*;
 public class TC001_SignInButton {
 
     private static Logger Log = Logger.getLogger(TC001_SignInButton.class.getName());
-   //public static Logger Log = Logger.getLogger(TC001_SignInButton.class);
 
     WebDriver driver ;
     //HomePage home;
@@ -39,8 +38,7 @@ public class TC001_SignInButton {
     // This method will click on Sign in button on login page.
     @Test
     public void clickSignInNavigateHomePage() throws InterruptedException, IOException {
-        Log.info( "This is log" );
-        //Log.debug( "This is new log" );
+        Log.info( "TC for clicking SignIn button started" );
         loginPage = commanFunction.clickSignInButton();
         loginPage.waitForLoginPage();
         assertTrue(loginPage.checkCreateAccount(), "Create account button is not visible.");

@@ -1,6 +1,7 @@
 package com.automationpractice.test.testcases;
 
 import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import com.automationpractice.test.common.CommanFunction;
@@ -10,6 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
 import java.io.IOException;
 
 import static org.testng.Assert.assertEquals;
@@ -21,7 +23,7 @@ import static org.testng.Assert.assertTrue;
 public class TC003_Login {
 
     WebDriver driver;
-   // HomePage homePage;
+    // HomePage homePage;
     LoginPage loginPage;
     MyAccountPage myAccountPage;
     CommanFunction commanFunction;
@@ -35,6 +37,7 @@ public class TC003_Login {
         commanFunction = new CommanFunction(driver);
         loginPage = commanFunction.clickSignInButton();
         //myAccountPage = loginPage.successFulLogin();
+        DOMConfigurator.configure("src/test/log4j.xml");
     }
 
     /**
@@ -46,9 +49,8 @@ public class TC003_Login {
         myAccountPage = loginPage.successFulLogin();
 
     }*/
-
-    @Test (priority = 0)
-    public void  successFulLogin() {
+    @Test(priority = 0)
+    public void successFulLogin() {
 
         try {
             myAccountPage = loginPage.successFulLogin(); //successFulLogin is returning myAccount page so we assign it in myAccountPage so that we can use it in next function.
@@ -56,24 +58,23 @@ public class TC003_Login {
             e.printStackTrace();
         }
         myAccountPage.checkMyAccountPageExistence();
-        assertTrue(myAccountPage.isMyAccountPagePresent(),"Login is successful. My account page is present");
+        assertTrue(myAccountPage.isMyAccountPagePresent(), "Login is successful. My account page is present");
 
 
     }
 
-    @Test (priority = 2)
+    @Test(priority = 2)
     public void failedLogin() throws IOException {
 
-          // myAccountPage.checkMyAccountPageExistence();
-           // myAccountPage.checkMyAccount();
-            if (myAccountPage.isMyAccountPagePresent()==false){
-     //   if (myAccountPage.checkMyAccountPageExistence()) {
+        // myAccountPage.checkMyAccountPageExistence();
+        // myAccountPage.checkMyAccount();
+        if (myAccountPage.isMyAccountPagePresent() == false) {
+            //   if (myAccountPage.checkMyAccountPageExistence()) {
             loginPage.waitForLoginPage();
             loginPage.failedLoginCases();
-        } else
-            {
-                myAccountPage.clickSignOutButton();
-                loginPage.failedLoginCases();
+        } else {
+            myAccountPage.clickSignOutButton();
+            loginPage.failedLoginCases();
         }
     }
 
@@ -89,7 +90,7 @@ public class TC003_Login {
 
 
     @AfterClass
-    public void tearDown(){
+    public void tearDown() {
         commanFunction.closeDriver();
         System.out.println("Driver closed");
     }
