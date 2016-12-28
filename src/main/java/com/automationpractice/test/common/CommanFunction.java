@@ -2,10 +2,13 @@ package com.automationpractice.test.common;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.html5.ApplicationCache;
 import org.openqa.selenium.interactions.Actions;
 import com.automationpractice.test.pages.LoginPage;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -17,6 +20,8 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.NoSuchElementException;
 import java.util.Properties;
+
+import static org.openqa.selenium.remote.CapabilityType.*;
 
 
 /**
@@ -33,12 +38,13 @@ public class CommanFunction {
     static Properties properties;
     public static String mailscreenshotpath;
 
-    public CommanFunction() {
 
+    public CommanFunction() {
     }
 
     public CommanFunction(WebDriver driver) {
         this.driver = driver;
+
     }
 
 
@@ -120,14 +126,27 @@ public class CommanFunction {
         WebDriver driver = null;
         switch (browserType) {
             case "firefox":
+                DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+                capabilities.setCapability("marionette",true);
+                capabilities.setPlatform(Platform.WINDOWS);
+                capabilities.setCapability(ACCEPT_SSL_CERTS, true);
+                capabilities.setCapability(SUPPORTS_FINDING_BY_CSS,true);
+                capabilities.setCapability(SUPPORTS_APPLICATION_CACHE,false);
+                //capabilities.setCapability(s);
                 System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\GecoDriver\\geckodriver.exe");
                 driver = new FirefoxDriver();
                 driver.manage().window().maximize();
                 break;
 
             case "chrome":
+                DesiredCapabilities chromeCapabilities = DesiredCapabilities.chrome();
+                ChromeOptions options = new ChromeOptions();
+                options.addArguments("test-type");
+                chromeCapabilities.setCapability("chrome.binary","");
+                chromeCapabilities.setCapability(ChromeOptions.CAPABILITY, options);
+                chromeCapabilities.setPlatform(Platform.WINDOWS);
                 System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\ChromeDriver\\chromedriver.exe");
-                driver = new ChromeDriver();
+                driver = new ChromeDriver(chromeCapabilities);
                 driver.manage().window().maximize();
                 break;
 

@@ -41,7 +41,7 @@ public class TC003_Login {
     }
 
     /**
-     * Methods which will be used repetedly should be in BeforeMethod annotation.
+     * Methods which will be used repeatedly should be in BeforeMethod annotation.
      */
     /*@BeforeMethod
     public void naviagtionSetUp(){
