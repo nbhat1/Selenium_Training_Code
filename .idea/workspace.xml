@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9eb6f10c-3934-45d4-abc7-6ae2b32f50ad" name="Default" comment="new commit to text commit from intelliJ.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/automationpractice/test/Ruf/tetClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="9eb6f10c-3934-45d4-abc7-6ae2b32f50ad" name="Default" comment="new commit to text commit from intelliJ." />
     <ignored path="SeleniumTraining.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -43,7 +40,7 @@
       <file leaf-file-name="TC003_Login.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com.automationpractice.test/testcases/TC003_Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
+            <state relative-caret-position="561">
               <caret line="48" column="52" selection-start-line="48" selection-start-column="52" selection-end-line="48" selection-end-column="52" />
               <folding />
             </state>
@@ -212,6 +209,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -386,7 +384,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1006,7 +1003,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/content/SampleLoginPage.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/TestCases.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/content/SampleLoginPage.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/MyFirstTest.java" />
@@ -1151,8 +1147,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com.automationpractice.test/testcases/TC003_Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
+        <state relative-caret-position="561">
           <caret line="48" column="52" selection-start-line="48" selection-start-column="52" selection-end-line="48" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Git Commands.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
