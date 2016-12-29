@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+
+    <listeners>
+        <listener class-name="utilities.Listeners"/>
+    </listeners>
+
+    <test name="SignIn And Login" >
+        <classes>
+            <class name="com.automationpractice.test.testcases.TC001_SignInButton" />
+            <class name="com.automationpractice.test.testcases.TC003_Login" />
+        </classes>
+    </test>
+
+    <test name="Verify Content on MyAccount page" >
+        <classes>
+            <class name="com.automationpractice.test.testcases.TC004_MyAccount" />
+        </classes>
+    </test>
+
+    <test name="Verify wishlist page functionality">
+        <classes>
+            <class name="com.automationpractice.test.testcases.TC005_MyWishlist"/>
+        </classes>
+    </test>
+</suite>

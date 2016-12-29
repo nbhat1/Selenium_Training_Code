@@ -1,0 +1,29 @@
+*******************************************************Git Commands**************************************************************
+
+Go to location of your repositrory on your system
+
+Set user name ----
+git config --global user.name "nbhat1"
+
+Set email ----
+git config --global user.email "neeraj.engg@gmail.com"
+
+Go to location where you want to clone repository-----
+git clone https://github.com/nbhat1/Java_Code.git
+
+Check Status -----
+git status
+
+Add files - 
+git add filename or git add --all ----to add all files changed.
+
+Commit files -----
+git commit -m "Message whiel commit"
+
+Push files -----
+git push
+
+---- Folder added automaically when new files added inside of folder.
+---- Empty folder do not get added automatically.
+
+

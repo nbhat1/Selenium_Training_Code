@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="43367" started-at="2016-12-12T10:32:19Z" finished-at="2016-12-12T10:33:02Z">
+    <groups>
+    </groups>
+    <test name="SignIn And Login" duration-ms="43367" started-at="2016-12-12T10:32:19Z" finished-at="2016-12-12T10:33:02Z">
+      <class name="TC003_Login">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.TC003_Login@3498ed]" name="setUp" is-config="true" duration-ms="15895" started-at="2016-12-12T16:02:37Z" finished-at="2016-12-12T16:02:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="successFulLogin()[pri:0, instance:testcases.TC003_Login@3498ed]" name="successFulLogin" duration-ms="1868" started-at="2016-12-12T16:02:53Z" finished-at="2016-12-12T16:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successFulLogin -->
+        <test-method status="PASS" signature="verifyUserName()[pri:1, instance:testcases.TC003_Login@3498ed]" name="verifyUserName" duration-ms="60" started-at="2016-12-12T16:02:55Z" depends-on-methods="TC003_Login.successFulLogin" finished-at="2016-12-12T16:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserName -->
+        <test-method status="PASS" signature="failedLogin()[pri:2, instance:testcases.TC003_Login@3498ed]" name="failedLogin" duration-ms="6402" started-at="2016-12-12T16:02:55Z" finished-at="2016-12-12T16:03:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC003_Login@3498ed]" name="tearDown" is-config="true" duration-ms="846" started-at="2016-12-12T16:03:01Z" finished-at="2016-12-12T16:03:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TC003_Login -->
+      <class name="TC001_SignInButton">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.TC001_SignInButton@6aaa5eb0]" name="setUp" is-config="true" duration-ms="19" started-at="2016-12-12T16:02:19Z" finished-at="2016-12-12T16:02:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="clickSignInNavigateHomePage()[pri:0, instance:testcases.TC001_SignInButton@6aaa5eb0]" name="clickSignInNavigateHomePage" duration-ms="17384" started-at="2016-12-12T16:02:19Z" finished-at="2016-12-12T16:02:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSignInNavigateHomePage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC001_SignInButton@6aaa5eb0]" name="tearDown" is-config="true" duration-ms="876" started-at="2016-12-12T16:02:36Z" finished-at="2016-12-12T16:02:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TC001_SignInButton -->
+    </test> <!-- SignIn And Login -->
+  </suite> <!-- Suite1 -->
+</testng-results>
