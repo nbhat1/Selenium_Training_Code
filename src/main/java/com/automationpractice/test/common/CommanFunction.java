@@ -2,13 +2,19 @@ package com.automationpractice.test.common;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
+<<<<<<< HEAD
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.html5.ApplicationCache;
+=======
+>>>>>>> master
 import org.openqa.selenium.interactions.Actions;
 import com.automationpractice.test.pages.LoginPage;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+<<<<<<< HEAD
 import org.openqa.selenium.remote.CapabilityType;
+=======
+>>>>>>> master
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -21,8 +27,11 @@ import java.util.GregorianCalendar;
 import java.util.NoSuchElementException;
 import java.util.Properties;
 
+<<<<<<< HEAD
 import static org.openqa.selenium.remote.CapabilityType.*;
 
+=======
+>>>>>>> master
 
 /**
  * Created by neeraj.bhatnagar on 11/22/2016.
@@ -38,13 +47,21 @@ public class CommanFunction {
     static Properties properties;
     public static String mailscreenshotpath;
 
+<<<<<<< HEAD
 
     public CommanFunction() {
+=======
+    public CommanFunction() {
+
+>>>>>>> master
     }
 
     public CommanFunction(WebDriver driver) {
         this.driver = driver;
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
     }
 
 
@@ -126,6 +143,7 @@ public class CommanFunction {
         WebDriver driver = null;
         switch (browserType) {
             case "firefox":
+<<<<<<< HEAD
                 DesiredCapabilities capabilities = DesiredCapabilities.firefox();
                 capabilities.setCapability("marionette",true);
                 capabilities.setPlatform(Platform.WINDOWS);
@@ -133,12 +151,15 @@ public class CommanFunction {
                 capabilities.setCapability(SUPPORTS_FINDING_BY_CSS,true);
                 capabilities.setCapability(SUPPORTS_APPLICATION_CACHE,false);
                 //capabilities.setCapability(s);
+=======
+>>>>>>> master
                 System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\GecoDriver\\geckodriver.exe");
                 driver = new FirefoxDriver();
                 driver.manage().window().maximize();
                 break;
 
             case "chrome":
+<<<<<<< HEAD
                 DesiredCapabilities chromeCapabilities = DesiredCapabilities.chrome();
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("test-type");
@@ -147,6 +168,10 @@ public class CommanFunction {
                 chromeCapabilities.setPlatform(Platform.WINDOWS);
                 System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\ChromeDriver\\chromedriver.exe");
                 driver = new ChromeDriver(chromeCapabilities);
+=======
+                System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\ChromeDriver\\chromedriver.exe");
+                driver = new ChromeDriver();
+>>>>>>> master
                 driver.manage().window().maximize();
                 break;
 
