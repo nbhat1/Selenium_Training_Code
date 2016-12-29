@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9eb6f10c-3934-45d4-abc7-6ae2b32f50ad" name="Default" comment="new commit to text commit from intelliJ." />
+    <list default="true" id="9eb6f10c-3934-45d4-abc7-6ae2b32f50ad" name="Default" comment="new commit to text commit from intelliJ.">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Git Commands.txt" afterPath="$PROJECT_DIR$/Git Commands.txt" />
+    </list>
     <ignored path="SeleniumTraining.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -127,6 +129,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/automationpractice/test/Ruf/test1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/automationpractice/test/Ruf/gitCheckClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/automationpractice/test/Ruf/tetClass.java" />
+        <option value="$PROJECT_DIR$/Git Commands.txt" />
       </list>
     </option>
   </component>
@@ -911,7 +914,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1155,8 +1158,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Git Commands.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="578">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding />
         </state>
       </provider>
