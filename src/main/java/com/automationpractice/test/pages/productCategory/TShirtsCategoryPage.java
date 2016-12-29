@@ -17,9 +17,9 @@ import java.io.IOException;
  */
 public class TShirtsCategoryPage extends CommanFunction {
 
-    public TShirtsCategoryPage() {
+    /*public TShirtsCategoryPage() {
 
-    }
+    }*/
 
     public TShirtsCategoryPage(WebDriver driver) {
         super(driver);
