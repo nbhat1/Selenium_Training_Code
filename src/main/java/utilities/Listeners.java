@@ -18,12 +18,17 @@ public class Listeners extends CommanFunction implements ITestListener{
     static Logger log = Logger.getLogger(CreateAccountPage.class.getName());
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /*public Listeners() {
     }*/
 =======
     public Listeners() {
     }
 >>>>>>> master
+=======
+    /*public Listeners() {
+    }*/
+>>>>>>> refs/remotes/origin/QA
 
     public Listeners(WebDriver driver) {
         super( driver );

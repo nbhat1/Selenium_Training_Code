@@ -18,6 +18,7 @@ import java.io.IOException;
 public class TShirtsCategoryPage extends CommanFunction {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /*public TShirtsCategoryPage() {
 
     }*/
@@ -26,6 +27,11 @@ public class TShirtsCategoryPage extends CommanFunction {
 
     }
 >>>>>>> master
+=======
+    /*public TShirtsCategoryPage() {
+
+    }*/
+>>>>>>> refs/remotes/origin/QA
 
     public TShirtsCategoryPage(WebDriver driver) {
         super(driver);

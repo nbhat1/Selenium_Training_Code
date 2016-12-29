@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="9eb6f10c-3934-45d4-abc7-6ae2b32f50ad" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
 =======
     <list default="true" id="9eb6f10c-3934-45d4-abc7-6ae2b32f50ad" name="Default" comment="" />
 >>>>>>> master
+=======
+    <list default="true" id="9eb6f10c-3934-45d4-abc7-6ae2b32f50ad" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/automationpractice/test/Ruf/test1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
+>>>>>>> refs/remotes/origin/QA
     <ignored path="SeleniumTraining.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -33,6 +40,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
 <<<<<<< HEAD
       <file leaf-file-name="CommanFunction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/automationpractice/test/common/CommanFunction.java">
@@ -125,25 +133,35 @@
       </file>
       <file leaf-file-name="testng.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testng.xml">
+=======
+      <file leaf-file-name="CommanFunction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/automationpractice/test/common/CommanFunction.java">
+>>>>>>> refs/remotes/origin/QA
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+            <state relative-caret-position="527">
+              <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/automationpractice/test/pages/LoginPage.java">
+      <file leaf-file-name="TC003_Login.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com.automationpractice.test/testcases/TC003_Login.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="365">
               <caret line="83" column="32" selection-start-line="83" selection-start-column="32" selection-end-line="83" selection-end-column="32" />
 >>>>>>> master
+=======
+            <state relative-caret-position="442">
+              <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+>>>>>>> refs/remotes/origin/QA
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
       <file leaf-file-name="CommanFunction.java" pinned="false" current-in-tab="true">
@@ -161,6 +179,8 @@
         </entry>
       </file>
 >>>>>>> master
+=======
+>>>>>>> refs/remotes/origin/QA
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -172,12 +192,16 @@
   </component>
   <component name="Git.Settings">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/QA
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
         <option value="nbhat1 &lt;neeraj.engg@gmail.com&gt;" />
       </list>
     </option>
     <option name="UPDATE_TYPE" value="MERGE" />
+<<<<<<< HEAD
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="PUSH_TAGS">
       <GitPushTagMode>
@@ -189,11 +213,22 @@
       <push-target-info repo="$PROJECT_DIR$" source="QA" target-remote="origin" target-branch="qa" />
     </push-targets>
 =======
+=======
+>>>>>>> refs/remotes/origin/QA
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="PUSH_TAGS">
-      <GitPushTagMode />
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
     </option>
+<<<<<<< HEAD
 >>>>>>> master
+=======
+    <push-targets>
+      <push-target-info repo="$PROJECT_DIR$" source="QA" target-remote="origin" target-branch="qa" />
+    </push-targets>
+>>>>>>> refs/remotes/origin/QA
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -204,6 +239,9 @@
     <option name="CHANGED_PATHS">
       <list>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/QA
         <option value="$PROJECT_DIR$/src/test/java/MyFirstTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/TestCases.java" />
@@ -219,11 +257,14 @@
         <option value="$PROJECT_DIR$/src/main/java/content/HomePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/content/MyAccountPage.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+<<<<<<< HEAD
 =======
         <option value="$PROJECT_DIR$/src/main/java/content/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/content/HomePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/content/MyAccountPage.java" />
 >>>>>>> master
+=======
+>>>>>>> refs/remotes/origin/QA
         <option value="$PROJECT_DIR$/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/java/pages/WomenPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/ProductDetails.java" />
@@ -232,9 +273,13 @@
         <option value="$PROJECT_DIR$/src/main/java/testcases/RegisterNewUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/testcases/SignInButton.java" />
 <<<<<<< HEAD
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/testng.xml" />
 =======
 >>>>>>> master
+=======
+        <option value="$PROJECT_DIR$/testng.xml" />
+>>>>>>> refs/remotes/origin/QA
         <option value="$PROJECT_DIR$/src/main/java/testcases/TC001_SignInButton.java" />
         <option value="$PROJECT_DIR$/config.properties" />
         <option value="$PROJECT_DIR$/src/main/java/pages/MyAccountPage.java" />
@@ -244,6 +289,7 @@
         <option value="$PROJECT_DIR$/src/main/java/comman/CommanFunction.java" />
         <option value="$PROJECT_DIR$/src/main/java/testcases/TC003_Login.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/AddressPage.java" />
+<<<<<<< HEAD
 <<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/main/java/com/automationpractice/test/Ruf/test1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/automationpractice/test/Ruf/gitCheckClass.java" />
@@ -281,6 +327,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/automationpractice/test/common/CommanFunction.java" />
         <option value="$PROJECT_DIR$/src/test/java/com.automationpractice.test/testcases/TC003_Login.java" />
 >>>>>>> master
+=======
+        <option value="$PROJECT_DIR$/src/main/java/com/automationpractice/test/Ruf/test1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/automationpractice/test/Ruf/gitCheckClass.java" />
+>>>>>>> refs/remotes/origin/QA
       </list>
     </option>
   </component>
@@ -339,10 +389,14 @@
     </entry>
   </component>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
 =======
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
 >>>>>>> master
+=======
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+>>>>>>> refs/remotes/origin/QA
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -368,10 +422,15 @@
     </navigator>
     <panes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <pane id="Scratches" />
       <pane id="Scope" />
 =======
 >>>>>>> master
+=======
+      <pane id="Scratches" />
+      <pane id="Scope" />
+>>>>>>> refs/remotes/origin/QA
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -401,6 +460,7 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
               <option name="myItemId" value="testdata" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -417,6 +477,8 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
 >>>>>>> master
+=======
+>>>>>>> refs/remotes/origin/QA
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -470,6 +532,7 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
 <<<<<<< HEAD
+<<<<<<< HEAD
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -504,6 +567,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
 >>>>>>> master
+=======
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+>>>>>>> refs/remotes/origin/QA
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -557,6 +625,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< HEAD
 <<<<<<< HEAD
               <option name="myItemId" value="common" />
 =======
@@ -610,11 +679,15 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Screenshots" />
 >>>>>>> master
+=======
+              <option name="myItemId" value="common" />
+>>>>>>> refs/remotes/origin/QA
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <pane id="PackagesPane" />
 =======
@@ -622,12 +695,16 @@
       <pane id="PackagesPane" />
       <pane id="Scope" />
 >>>>>>> master
+=======
+      <pane id="PackagesPane" />
+>>>>>>> refs/remotes/origin/QA
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.53333336" />
+<<<<<<< HEAD
 <<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -640,26 +717,24 @@
 =======
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Software/poi-3.15/xmlbeans-2.6.0.jar!/" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+>>>>>>> refs/remotes/origin/QA
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="findjar.last.used.dir" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Frameworks\Selenium_Training_Code\src\main\java" />
-      <recent name="D:\Frameworks\Selenium_Training_Code\src\test" />
-      <recent name="D:\Frameworks\Selenium_Training_Code" />
-      <recent name="D:\Frameworks\Selenium_Training_Code\src" />
-      <recent name="D:\Frameworks\Selenium_Training_Code\src\test\java\com.automationpractice.test\testcases" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.automationpractice.test" />
       <recent name="content" />
     </key>
+<<<<<<< HEAD
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Frameworks\Selenium_Training_Code\src" />
       <recent name="D:\Frameworks\Selenium_Training_Code\src\test" />
     </key>
 >>>>>>> master
+=======
+>>>>>>> refs/remotes/origin/QA
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="testcases" />
     </key>
@@ -667,6 +742,7 @@
       <recent name="content" />
     </key>
   </component>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <component name="RunManager" selected="TestNG.TC003_Login (1)">
     <configuration default="false" name="TC003_Login.verifyUserName" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
@@ -680,6 +756,13 @@
         <pattern>
           <option name="PATTERN" value="com.automationpractice.test.testcases.*" />
 >>>>>>> master
+=======
+  <component name="RunManager" selected="TestNG.TC003_Login (1)">
+    <configuration default="false" name="TC003_Login.verifyUserName" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+>>>>>>> refs/remotes/origin/QA
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -687,11 +770,15 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/QA
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="testcases" />
       <option name="MAIN_CLASS_NAME" value="testcases.TC003_Login" />
       <option name="METHOD_NAME" value="verifyUserName" />
       <option name="GROUP_NAME" />
+<<<<<<< HEAD
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -709,10 +796,18 @@
       <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
       <option name="OUTPUT_DIRECTORY" value="D:\Frameworks\Selenium_Training_Code\OutPut" />
 >>>>>>> master
+=======
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+>>>>>>> refs/remotes/origin/QA
       <option name="ANNOTATION_TYPE" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <value defaultName="singleModule" />
       </option>
@@ -724,11 +819,18 @@
       <option name="USE_DEFAULT_REPORTERS" value="false" />
       <option name="PROPERTIES_FILE" value="" />
 >>>>>>> master
+=======
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+>>>>>>> refs/remotes/origin/QA
       <envs />
       <properties />
       <listeners />
       <method />
     </configuration>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <configuration default="false" name="TC003_Login" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -740,6 +842,12 @@
         <pattern>
           <option name="PATTERN" value="com.automationpractice.test.pages.*" />
 >>>>>>> master
+=======
+    <configuration default="false" name="TC003_Login" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+>>>>>>> refs/remotes/origin/QA
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -747,12 +855,16 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/QA
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="testcases" />
       <option name="MAIN_CLASS_NAME" value="testcases.TC003_Login" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
+<<<<<<< HEAD
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -769,10 +881,17 @@
       <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
       <option name="OUTPUT_DIRECTORY" value="D:\Frameworks\Selenium_Training_Code\OutPut" />
 >>>>>>> master
+=======
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+>>>>>>> refs/remotes/origin/QA
       <option name="ANNOTATION_TYPE" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <value defaultName="singleModule" />
       </option>
@@ -784,11 +903,18 @@
       <option name="USE_DEFAULT_REPORTERS" value="false" />
       <option name="PROPERTIES_FILE" value="" />
 >>>>>>> master
+=======
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+>>>>>>> refs/remotes/origin/QA
       <envs />
       <properties />
       <listeners />
       <method />
     </configuration>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <configuration default="false" name="TC003_Login.failedLogin" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -800,6 +926,12 @@
         <pattern>
           <option name="PATTERN" value="com.automationpractice.test.testcases.*" />
 >>>>>>> master
+=======
+    <configuration default="false" name="TC003_Login.failedLogin" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+>>>>>>> refs/remotes/origin/QA
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -807,11 +939,15 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/QA
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="testcases" />
       <option name="MAIN_CLASS_NAME" value="testcases.TC003_Login" />
       <option name="METHOD_NAME" value="failedLogin" />
       <option name="GROUP_NAME" />
+<<<<<<< HEAD
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -829,10 +965,18 @@
       <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
       <option name="OUTPUT_DIRECTORY" value="D:\Frameworks\Selenium_Training_Code\OutPut" />
 >>>>>>> master
+=======
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+>>>>>>> refs/remotes/origin/QA
       <option name="ANNOTATION_TYPE" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <value defaultName="singleModule" />
       </option>
@@ -844,11 +988,18 @@
       <option name="USE_DEFAULT_REPORTERS" value="false" />
       <option name="PROPERTIES_FILE" value="" />
 >>>>>>> master
+=======
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+>>>>>>> refs/remotes/origin/QA
       <envs />
       <properties />
       <listeners />
       <method />
     </configuration>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <configuration default="false" name="TC003_Login.successFulLogin" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -860,6 +1011,12 @@
         <pattern>
           <option name="PATTERN" value="com.automationpractice.test.testcases.*" />
 >>>>>>> master
+=======
+    <configuration default="false" name="TC003_Login.successFulLogin" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+>>>>>>> refs/remotes/origin/QA
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -867,11 +1024,15 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/QA
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="testcases" />
       <option name="MAIN_CLASS_NAME" value="testcases.TC003_Login" />
       <option name="METHOD_NAME" value="successFulLogin" />
       <option name="GROUP_NAME" />
+<<<<<<< HEAD
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -889,10 +1050,18 @@
       <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
       <option name="OUTPUT_DIRECTORY" value="D:\Frameworks\Selenium_Training_Code\OutPut" />
 >>>>>>> master
+=======
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+>>>>>>> refs/remotes/origin/QA
       <option name="ANNOTATION_TYPE" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <value defaultName="singleModule" />
       </option>
@@ -904,16 +1073,26 @@
       <option name="USE_DEFAULT_REPORTERS" value="false" />
       <option name="PROPERTIES_FILE" value="" />
 >>>>>>> master
+=======
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+>>>>>>> refs/remotes/origin/QA
       <envs />
       <properties />
       <listeners />
       <method />
     </configuration>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <configuration default="false" name="TC003_Login (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
 =======
     <configuration default="false" name="TC005_MyWishlist" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
 >>>>>>> master
+=======
+    <configuration default="false" name="TC003_Login (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+>>>>>>> refs/remotes/origin/QA
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.automationpractice.test.testcases.*" />
@@ -923,6 +1102,7 @@
       <module name="Selenium_Training_Code" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
+<<<<<<< HEAD
 <<<<<<< HEAD
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="com.automationpractice.test.testcases" />
@@ -936,20 +1116,30 @@
       <option name="OUTPUT_DIRECTORY" />
 =======
       <option name="SUITE_NAME" value="" />
+=======
+      <option name="SUITE_NAME" />
+>>>>>>> refs/remotes/origin/QA
       <option name="PACKAGE_NAME" value="com.automationpractice.test.testcases" />
-      <option name="MAIN_CLASS_NAME" value="com.automationpractice.test.testcases.TC005_MyWishlist" />
-      <option name="METHOD_NAME" value="" />
-      <option name="GROUP_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="com.automationpractice.test.testcases.TC003_Login" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea" />
+<<<<<<< HEAD
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
       <option name="OUTPUT_DIRECTORY" value="D:\Frameworks\Selenium_Training_Code\OutPut" />
 >>>>>>> master
+=======
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+>>>>>>> refs/remotes/origin/QA
       <option name="ANNOTATION_TYPE" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <value defaultName="singleModule" />
       </option>
@@ -961,6 +1151,12 @@
       <option name="USE_DEFAULT_REPORTERS" value="false" />
       <option name="PROPERTIES_FILE" value="" />
 >>>>>>> master
+=======
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+>>>>>>> refs/remotes/origin/QA
       <envs />
       <properties />
       <listeners />
@@ -1160,12 +1356,16 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/QA
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" />
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
+<<<<<<< HEAD
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -1182,10 +1382,17 @@
       <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
       <option name="OUTPUT_DIRECTORY" value="D:\Frameworks\Selenium_Training_Code\OutPut" />
 >>>>>>> master
+=======
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+>>>>>>> refs/remotes/origin/QA
       <option name="ANNOTATION_TYPE" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <value defaultName="singleModule" />
       </option>
@@ -1197,6 +1404,12 @@
       <option name="USE_DEFAULT_REPORTERS" value="false" />
       <option name="PROPERTIES_FILE" value="" />
 >>>>>>> master
+=======
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+>>>>>>> refs/remotes/origin/QA
       <envs />
       <properties />
       <listeners />
@@ -1261,11 +1474,15 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="TestNG.Unnamed" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/QA
       <item index="1" class="java.lang.String" itemvalue="TestNG.TC003_Login.verifyUserName" />
       <item index="2" class="java.lang.String" itemvalue="TestNG.TC003_Login" />
       <item index="3" class="java.lang.String" itemvalue="TestNG.TC003_Login.failedLogin" />
       <item index="4" class="java.lang.String" itemvalue="TestNG.TC003_Login.successFulLogin" />
       <item index="5" class="java.lang.String" itemvalue="TestNG.TC003_Login (1)" />
+<<<<<<< HEAD
     </list>
     <recent_temporary>
       <list size="5">
@@ -1289,6 +1506,16 @@
         <item index="3" class="java.lang.String" itemvalue="TestNG.TC004_MyAccount.verifyToolTip" />
         <item index="4" class="java.lang.String" itemvalue="TestNG.MyAccountPage.tShirtsToolTip" />
 >>>>>>> master
+=======
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="TestNG.TC003_Login (1)" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.TC003_Login.verifyUserName" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.TC003_Login.successFulLogin" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.TC003_Login" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.TC003_Login.failedLogin" />
+>>>>>>> refs/remotes/origin/QA
       </list>
     </recent_temporary>
   </component>
@@ -1307,6 +1534,9 @@
       <updated>1479446808481</updated>
     </task>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/QA
     <task id="LOCAL-00001" summary="new commit to text commit from intelliJ.">
       <created>1482997249115</created>
       <option name="number" value="00001" />
@@ -1328,6 +1558,7 @@
       <option name="project" value="LOCAL" />
       <updated>1482997413745</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00004" summary="new commit to text commit from intelliJ.">
       <created>1482997536807</created>
       <option name="number" value="00004" />
@@ -1369,39 +1600,47 @@
     <history-entry file="TC003_Login_verifyUserName - 2016.12.10 at 17h 51m 34s.xml">
       <configuration name="TC003_Login.verifyUserName" configurationId="TestNG" />
 =======
+=======
+    <option name="localTasksCounter" value="4" />
+>>>>>>> refs/remotes/origin/QA
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TC003_Login_successFulLogin - 2016.12.22 at 19h 48m 46s.xml">
+    <history-entry file="TC002_RegisterNewUser - 2016.12.09 at 19h 29m 08s.xml">
+      <configuration name="TC002_RegisterNewUser" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TC002_RegisterNewUser - 2016.12.09 at 19h 36m 23s.xml">
+      <configuration name="TC002_RegisterNewUser" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TC003_Login - 2016.12.10 at 16h 16m 03s.xml">
+      <configuration name="TC003_Login" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TC003_Login - 2016.12.10 at 16h 23m 36s.xml">
+      <configuration name="TC003_Login" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TC003_Login - 2016.12.10 at 16h 24m 20s.xml">
+      <configuration name="TC003_Login" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TC003_Login_(1) - 2016.12.28 at 14h 22m 48s.xml">
+      <configuration name="TC003_Login (1)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TC003_Login_failedLogin - 2016.12.10 at 16h 11m 47s.xml">
+      <configuration name="TC003_Login.failedLogin" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TC003_Login_successFulLogin - 2016.12.10 at 16h 12m 19s.xml">
       <configuration name="TC003_Login.successFulLogin" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TC005_MyWishlist - 2016.12.21 at 15h 53m 09s.xml">
-      <configuration name="TC005_MyWishlist" configurationId="TestNG" />
+    <history-entry file="TC003_Login_successFulLogin - 2016.12.10 at 17h 37m 11s.xml">
+      <configuration name="TC003_Login.successFulLogin" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TC005_MyWishlist - 2016.12.21 at 15h 54m 50s.xml">
-      <configuration name="TC005_MyWishlist" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TC005_MyWishlist_addItemToWishList - 2016.12.21 at 15h 41m 23s.xml">
-      <configuration name="TC005_MyWishlist.addItemToWishList" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TC005_MyWishlist_addItemToWishList - 2016.12.21 at 16h 33m 12s.xml">
-      <configuration name="TC005_MyWishlist.addItemToWishList" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TC005_MyWishlist_addItemToWishList - 2016.12.21 at 16h 40m 44s.xml">
-      <configuration name="TC005_MyWishlist.addItemToWishList" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TC005_MyWishlist_addItemToWishList - 2016.12.21 at 16h 44m 21s.xml">
-      <configuration name="TC005_MyWishlist.addItemToWishList" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TC005_MyWishlist_addItemToWishList - 2016.12.21 at 16h 59m 12s.xml">
-      <configuration name="TC005_MyWishlist.addItemToWishList" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TC005_MyWishlist_addItemToWishList - 2016.12.22 at 18h 56m 08s.xml">
-      <configuration name="TC005_MyWishlist.addItemToWishList" configurationId="TestNG" />
-    </history-entry>
+<<<<<<< HEAD
     <history-entry file="TC005_MyWishlist_addItemToWishList - 2016.12.22 at 18h 58m 12s.xml">
       <configuration name="TC005_MyWishlist.addItemToWishList" configurationId="TestNG" />
 >>>>>>> master
+=======
+    <history-entry file="TC003_Login_verifyUserName - 2016.12.10 at 17h 51m 34s.xml">
+      <configuration name="TC003_Login.verifyUserName" configurationId="TestNG" />
+>>>>>>> refs/remotes/origin/QA
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -1410,6 +1649,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
 <<<<<<< HEAD
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32496512" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1429,23 +1669,28 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
 =======
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32664436" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32496512" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+>>>>>>> refs/remotes/origin/QA
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.4940171" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4013378" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925338" sideWeight="0.50216687" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.4940171" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914925" sideWeight="0.49783316" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3199554" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1924307" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277592" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23134328" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2575594" sideWeight="0.4940171" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+<<<<<<< HEAD
 >>>>>>> master
+=======
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+>>>>>>> refs/remotes/origin/QA
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1453,11 +1698,16 @@
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24986681" sideWeight="0.50598294" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277592" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
 =======
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24986681" sideWeight="0.50598294" order="6" side_tool="true" content_ui="tabs" />
 >>>>>>> master
+=======
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24986681" sideWeight="0.50598294" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277592" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+>>>>>>> refs/remotes/origin/QA
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1469,6 +1719,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+<<<<<<< HEAD
 <<<<<<< HEAD
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2575594" sideWeight="0.4940171" order="1" side_tool="false" content_ui="tabs" />
@@ -1486,21 +1737,27 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26119402" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
 =======
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+=======
+>>>>>>> refs/remotes/origin/QA
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2575594" sideWeight="0.4940171" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39910814" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32664436" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32664436" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23299888" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4013378" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24986681" sideWeight="0.50598294" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1924307" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
 >>>>>>> master
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26119402" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> refs/remotes/origin/QA
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277592" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
@@ -1517,31 +1774,45 @@
     <option name="myLimit" value="2678400000" />
   </component>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/QA
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new commit to text commit from intelliJ." />
     <option name="LAST_COMMIT_MESSAGE" value="new commit to text commit from intelliJ." />
   </component>
+<<<<<<< HEAD
 =======
 >>>>>>> master
+=======
+>>>>>>> refs/remotes/origin/QA
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
 <<<<<<< HEAD
+<<<<<<< HEAD
           <url>file://$PROJECT_DIR$/src/main/java/testcases/TC002_RegisterNewUser.java</url>
 =======
           <url>file://$PROJECT_DIR$/src/test/java/com.automationpractice.test/testcases/testcases/TC002_RegisterNewUser.java</url>
 >>>>>>> master
+=======
+          <url>file://$PROJECT_DIR$/src/main/java/testcases/TC002_RegisterNewUser.java</url>
+>>>>>>> refs/remotes/origin/QA
           <line>57</line>
           <properties />
           <option name="timeStamp" value="169" />
         </line-breakpoint>
       </breakpoints>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <option name="time" value="170" />
 =======
       <option name="time" value="188" />
 >>>>>>> master
+=======
+      <option name="time" value="170" />
+>>>>>>> refs/remotes/origin/QA
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1551,6 +1822,9 @@
   </component>
   <component name="editorHistoryManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/QA
     <entry file="file://$PROJECT_DIR$/src/test/java/MyFirstTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/content/SampleLoginPage.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/TestCases.java" />
@@ -1563,6 +1837,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/ruf/test.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ruf/TestCase.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.13.6/testng-6.9.13.6.jar!/org/testng/TestNG.class">
+<<<<<<< HEAD
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="427">
           <caret line="1060" column="0" selection-start-line="1060" selection-start-column="0" selection-end-line="1060" selection-end-column="0" />
@@ -1588,15 +1863,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/automationpractice/test/pages/productCategory/DressesCategoryPage.java">
+=======
+>>>>>>> refs/remotes/origin/QA
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="427">
+          <caret line="1060" column="0" selection-start-line="1060" selection-start-column="0" selection-end-line="1060" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/automationpractice/test/pages/productCategory/WomenCategoryPage.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.13.6/testng-6.9.13.6.jar!/org/testng/SuiteRunnerWorker.class">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="119">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
@@ -1608,11 +1885,16 @@
         <state relative-caret-position="170">
           <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
 >>>>>>> master
+=======
+        <state relative-caret-position="172">
+          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+>>>>>>> refs/remotes/origin/QA
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.13.6/testng-6.9.13.6.jar!/org/testng/SuiteRunner.class">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <state relative-caret-position="70">
           <caret line="247" column="23" selection-start-line="247" selection-start-column="23" selection-end-line="247" selection-end-column="23" />
@@ -1633,61 +1915,37 @@
 =======
         <state relative-caret-position="169">
           <caret line="563" column="0" selection-start-line="563" selection-start-column="0" selection-end-line="563" selection-end-column="0" />
+=======
+        <state relative-caret-position="70">
+          <caret line="247" column="23" selection-start-line="247" selection-start-column="23" selection-end-line="247" selection-end-column="23" />
+>>>>>>> refs/remotes/origin/QA
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.13.6/testng-6.9.13.6.jar!/org/testng/xml/XmlClass.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.13.6/testng-6.9.13.6.jar!/org/testng/TestRunner.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+        <state relative-caret-position="172">
+          <caret line="467" column="23" selection-start-line="467" selection-start-column="23" selection-end-line="467" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/passed.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/failed.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/test-classes/com/automationpractice/test/testcases/TC004_MyAccount.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.13.6/testng-6.9.13.6.jar!/org/testng/internal/TestMethodWorker.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/Suite1/SignIn And Login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/Suite1/SignIn And Login.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resourceslogs" />
-    <entry file="file://$PROJECT_DIR$/src/main/resourceslogs/test.log" />
-    <entry file="file://$PROJECT_DIR$/src/test/log4j.xml">
-      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="255">
           <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
           <folding />
 >>>>>>> master
+=======
+        <state relative-caret-position="444">
+          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+>>>>>>> refs/remotes/origin/QA
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <state relative-caret-position="867">
           <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
@@ -1837,31 +2095,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+=======
+        <state relative-caret-position="867">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+>>>>>>> refs/remotes/origin/QA
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.13.6/testng-6.9.13.6.jar!/org/testng/internal/ClassHelper.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.13.6/testng-6.9.13.6.jar!/org/testng/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
-          <caret line="53" column="90" selection-start-line="53" selection-start-column="90" selection-end-line="53" selection-end-column="90" />
-          <folding />
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Screenshots/verifyUserName_2016_19_12_15_38_12.jpeg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/automationpractice/test/pages/HomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/com/automationpractice/test/pages/CreateAccountPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
@@ -1935,88 +2184,100 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utilities/Listeners.java">
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/PaymentPage.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/ShoppingCart.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/WomenPage.java" />
+    <entry file="file://$PROJECT_DIR$/testng.xml">
+>>>>>>> refs/remotes/origin/QA
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="119">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="jar://D:/Selenium API/selenium-java-3.0.1/client-combined-3.0.1-nodeps.jar!/org/openqa/selenium/support/ui/WebDriverWait.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/ProductDetails.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/NavigationPage.java" />
+    <entry file="jar://D:/Selenium API/selenium-java-3.0.1/client-combined-3.0.1-nodeps.jar!/org/openqa/selenium/By.class" />
+    <entry file="jar://D:/Selenium API/selenium-java-3.0.1/client-combined-3.0.1-nodeps.jar!/org/openqa/selenium/WebElement.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/HomePage.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.13.6/testng-6.9.13.6.jar!/org/testng/internal/Invoker.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="461" column="0" selection-start-line="461" selection-start-column="0" selection-end-line="461" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="173">
+          <caret line="447" column="0" selection-start-line="447" selection-start-column="0" selection-end-line="447" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testng.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.13.6/testng-6.9.13.6.jar!/org/testng/internal/MethodInvocationHelper.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Selenium API/selenium-java-3.0.1/client-combined-3.0.1-nodeps.jar!/org/openqa/selenium/support/ui/Select.class" />
+    <entry file="file://$PROJECT_DIR$/log4j.properties" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/CreateAccountPage.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/InterruptedException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="45" column="42" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/io/IOException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-317">
+          <caret line="33" column="31" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/LoginPage.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/MyAccountPage.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/AddressPage.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/testcases/TC001_SignInButton.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/comman/CommanFunction.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/testcases/TC002_RegisterNewUser.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/testcases/TC003_Login.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/OrderHistoryPage.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/CreditSlipPage.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/PersonalInfoPage.java" />
+    <entry file="file://$PROJECT_DIR$/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/WishListPage.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/automationpractice/test/Ruf/test1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/automationpractice/test/pages/WishListPage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/automationpractice/test/Ruf/gitCheckClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#321#322#0" expanded="true" />
-            <element signature="e#350#351#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#708#709#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/automationpractice/test/pages/MyAccountPage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/automationpractice/test/common/CommanFunction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2842">
-          <caret line="204" column="13" selection-start-line="204" selection-start-column="13" selection-end-line="204" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com.automationpractice.test/testcases/TC004_MyAccount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="46" column="74" selection-start-line="46" selection-start-column="74" selection-end-line="46" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/automationpractice/test/pages/productCategory/TShirtsCategoryPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com.automationpractice.test/testcases/TC005_MyWishlist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/automationpractice/test/pages/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="365">
           <caret line="83" column="32" selection-start-line="83" selection-start-column="32" selection-end-line="83" selection-end-column="32" />
 >>>>>>> master
+=======
+        <state relative-caret-position="527">
+          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+>>>>>>> refs/remotes/origin/QA
           <folding />
         </state>
       </provider>
@@ -2024,16 +2285,22 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/com.automationpractice.test/testcases/TC003_Login.java">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state relative-caret-position="493">
           <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
 =======
         <state relative-caret-position="110">
           <caret line="37" column="48" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="48" />
 >>>>>>> master
+=======
+        <state relative-caret-position="442">
+          <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+>>>>>>> refs/remotes/origin/QA
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     <entry file="file://$PROJECT_DIR$/src/main/java/com/automationpractice/test/common/CommanFunction.java">
@@ -2049,6 +2316,8 @@
       </provider>
     </entry>
 >>>>>>> master
+=======
+>>>>>>> refs/remotes/origin/QA
   </component>
   <component name="masterDetails">
     <states>
