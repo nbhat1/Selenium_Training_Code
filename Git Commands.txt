@@ -28,6 +28,9 @@ git push
 
 #################################################################################
 
+Before merging branch to Master----
+git pull master
+
 Merge code from Branch QA to Master-----
 git checkout master
 git merge QA
