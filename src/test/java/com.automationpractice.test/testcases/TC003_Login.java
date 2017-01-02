@@ -41,21 +41,12 @@ public class TC003_Login {
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
      * Methods which will be used repeatedly should be in BeforeMethod annotation.
-=======
-     * Methods which will be used repetedly should be in BeforeMethod annotation.
->>>>>>> master
-=======
-     * Methods which will be used repeatedly should be in BeforeMethod annotation.
->>>>>>> refs/remotes/origin/QA
      */
+
     /*@BeforeMethod
     public void naviagtionSetUp(){
-
         myAccountPage = loginPage.successFulLogin();
-
     }*/
     @Test(priority = 0)
     public void successFulLogin() {
