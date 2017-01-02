@@ -2,13 +2,28 @@ package com.automationpractice.test.common;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
+<<<<<<< HEAD
+<<<<<<< HEAD
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.html5.ApplicationCache;
+=======
+>>>>>>> master
+=======
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.html5.ApplicationCache;
+>>>>>>> refs/remotes/origin/QA
 import org.openqa.selenium.interactions.Actions;
 import com.automationpractice.test.pages.LoginPage;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+<<<<<<< HEAD
+<<<<<<< HEAD
 import org.openqa.selenium.remote.CapabilityType;
+=======
+>>>>>>> master
+=======
+import org.openqa.selenium.remote.CapabilityType;
+>>>>>>> refs/remotes/origin/QA
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -21,8 +36,16 @@ import java.util.GregorianCalendar;
 import java.util.NoSuchElementException;
 import java.util.Properties;
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 import static org.openqa.selenium.remote.CapabilityType.*;
 
+=======
+>>>>>>> master
+=======
+import static org.openqa.selenium.remote.CapabilityType.*;
+
+>>>>>>> refs/remotes/origin/QA
 
 /**
  * Created by neeraj.bhatnagar on 11/22/2016.
@@ -38,13 +61,30 @@ public class CommanFunction {
     static Properties properties;
     public static String mailscreenshotpath;
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 
     public CommanFunction() {
+=======
+    public CommanFunction() {
+
+>>>>>>> master
+=======
+
+    public CommanFunction() {
+>>>>>>> refs/remotes/origin/QA
     }
 
     public CommanFunction(WebDriver driver) {
         this.driver = driver;
+<<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
+=======
+
+>>>>>>> refs/remotes/origin/QA
     }
 
 
@@ -126,6 +166,10 @@ public class CommanFunction {
         WebDriver driver = null;
         switch (browserType) {
             case "firefox":
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/QA
                 DesiredCapabilities capabilities = DesiredCapabilities.firefox();
                 capabilities.setCapability("marionette",true);
                 capabilities.setPlatform(Platform.WINDOWS);
@@ -133,20 +177,38 @@ public class CommanFunction {
                 capabilities.setCapability(SUPPORTS_FINDING_BY_CSS,true);
                 capabilities.setCapability(SUPPORTS_APPLICATION_CACHE,false);
                 //capabilities.setCapability(s);
+<<<<<<< HEAD
+=======
+>>>>>>> master
+=======
+>>>>>>> refs/remotes/origin/QA
                 System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\GecoDriver\\geckodriver.exe");
                 driver = new FirefoxDriver();
                 driver.manage().window().maximize();
                 break;
 
             case "chrome":
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/QA
                 DesiredCapabilities chromeCapabilities = DesiredCapabilities.chrome();
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("test-type");
                 chromeCapabilities.setCapability("chrome.binary","");
                 chromeCapabilities.setCapability(ChromeOptions.CAPABILITY, options);
                 chromeCapabilities.setPlatform(Platform.WINDOWS);
+<<<<<<< HEAD
                 System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\ChromeDriver\\chromedriver.exe");
                 driver = new ChromeDriver(chromeCapabilities);
+=======
+                System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\ChromeDriver\\chromedriver.exe");
+                driver = new ChromeDriver();
+>>>>>>> master
+=======
+                System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\ChromeDriver\\chromedriver.exe");
+                driver = new ChromeDriver(chromeCapabilities);
+>>>>>>> refs/remotes/origin/QA
                 driver.manage().window().maximize();
                 break;
 
