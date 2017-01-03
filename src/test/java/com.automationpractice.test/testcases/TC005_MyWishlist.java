@@ -43,8 +43,6 @@ public class TC005_MyWishlist {
             tShirtsCategory.clickMyAccountLink();
             myAccountPage.clickOnWishListButton();
         } catch (NoSuchElementException e) {
-
-
         }
     }
 

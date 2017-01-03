@@ -34,8 +34,4 @@ public class WishListPage extends CommanFunction {
         //get values from excel sheet to create new wishlist
         //fillValuesInTextBox(newWishlistName);
     }
-
-    /**
-     * This function will delete default wishlist.
-     */
 }
