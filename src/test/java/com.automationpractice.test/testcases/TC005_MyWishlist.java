@@ -43,10 +43,14 @@ public class TC005_MyWishlist {
             tShirtsCategory.clickMyAccountLink();
             myAccountPage.clickOnWishListButton();
         } catch (NoSuchElementException e) {
-
-
         }
     }
+
+    @Test
+    public void createNewWishList(){
+
+    }
+
 
     /*@AfterClass
     public void tearDown(){

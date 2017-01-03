@@ -353,9 +353,7 @@ public class CommanFunction {
             waitForElementToBeVisible(locator).click();
         } catch (ElementNotVisibleException e) {
             System.out.println("Element which user wants to hover over is not present on page");
-
         }
-
     }
 
     /**
