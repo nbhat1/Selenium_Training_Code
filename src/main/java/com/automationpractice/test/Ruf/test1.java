@@ -5,5 +5,12 @@ package com.automationpractice.test.Ruf;
  */
 public class test1 {
 
-    private static String S =  "test1";
+    public static void main(String[] args) {
+        String S =  "test1";
+        System.out.println();
+
+    }
+
+
+
 }

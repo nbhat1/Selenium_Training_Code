@@ -55,7 +55,6 @@ public class TShirtsCategoryPage extends CommanFunction {
      */
     public void addItemToWishList() {
         //clickOnLinkAfterMouseHover(addToWishList);
-
         mouseHover(tShirtMouseHover);
         clickOnLocator(addToWishList);
         log.info("Item successfully added to Wishlist");
