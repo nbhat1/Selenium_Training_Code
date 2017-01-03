@@ -46,7 +46,7 @@ public class TC004_MyAccount {
         try {
             //assertEquals(myAccountPage.getToolTipOfHeaderElementWomen(),myAccountPage.womenToolTip(), "Tool Tip not matching for Women link");
             assertEquals(myAccountPage.getToolTipTShirtLinkFromMouseHoverOnWomenLink(), myAccountPage.tShirtsToolTip(), "Tool Tip is not matching for TShirts link");
-
+            //assertEquals(myAccountPage.tShirtsToolTip(), myAccountPage.getToolTipTShirtLinkFromMouseHoverOnWomenLink(), "Tool Tip is not matching for TShirts link");
         } catch (Exception e) {
             e.printStackTrace();
         }
