@@ -18,6 +18,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utilities.ExcelUtils;
+import utilities.Excel_Reader;
+
 import java.io.*;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
@@ -39,6 +41,9 @@ public class CommanFunction {
     //public static final By signOutButton = By.linkText("Sign out");
     static Properties properties;
     public static String mailscreenshotpath;
+    Excel_Reader excel;
+
+
 
     public CommanFunction() {
     }
@@ -417,6 +422,9 @@ public class CommanFunction {
         }
 
     }
+
+
+
 
 }
 
