@@ -37,7 +37,9 @@ public class MyAccountPage extends CommanFunction {
     private static final By tShirtFromHeader = By.xpath(".//*[@id='block_top_menu']/ul/li[3]/a");
 
 
-    public String userNameValue = getConfigFileData("userNameValue");
+    //public String userNameValue = getConfigFileData("userNameValue");
+
+
     /* Static values not required as we are using excel sheet for test data.
     public String womenToolTip = "WOMEN";
     public String TshirtsToolTip = "T-shirts";*/
@@ -75,6 +77,13 @@ public class MyAccountPage extends CommanFunction {
         log.info("Checking if myAccount page is present after login.");
     }
 
+    public boolean checkMyAccountPageExistence1() {
+        //checkPageExistence(signOutButton);
+        checkPageExistence(authenticateMyAccount);
+        log.info("Checking if myAccount page is present after login.");
+        return checkPageExistence(signOutButton);
+    }
+
     /*
     *This function will sign out user & would return driver reference of next page.
     */
@@ -92,6 +101,22 @@ public class MyAccountPage extends CommanFunction {
         System.out.println(s);
         log.info("Customer Name is " + s);
         return s;
+    }
+
+    /**
+     * This functionw ill read userName value from excel sheet.
+     */
+    public String userNameValue() {
+
+        String userName = null;
+        try {
+            CommanFunction.loadTestDataFile();
+            userName = ExcelUtils.getCellData(6, 0);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        log.info("User Name value of user is " + userName);
+        return userName;
     }
 
     /**
