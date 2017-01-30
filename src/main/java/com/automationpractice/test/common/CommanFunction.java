@@ -150,10 +150,6 @@ public class CommanFunction {
                 chromeCapabilities.setPlatform(Platform.WINDOWS);
                 System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\ChromeDriver\\chromedriver.exe");
                 driver = new ChromeDriver(chromeCapabilities);
-                System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\ChromeDriver\\chromedriver.exe");
-                driver = new ChromeDriver();
-                System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\ChromeDriver\\chromedriver.exe");
-                driver = new ChromeDriver(chromeCapabilities);
                 driver.manage().window().maximize();
                 break;
 

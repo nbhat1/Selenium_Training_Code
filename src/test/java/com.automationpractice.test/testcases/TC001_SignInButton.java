@@ -41,6 +41,7 @@ public class TC001_SignInButton {
         Log.info( "TC for clicking SignIn button started" );
         loginPage = commanFunction.clickSignInButton();
         loginPage.waitForLoginPage();
+        Log.info("Login page displayed successfully");
         assertTrue(loginPage.checkCreateAccount(), "Create account button is not visible.");
         //Log.info( assertTrue( loginPage.checkCreateAccount(), "This is new log" ) ); );
     }
