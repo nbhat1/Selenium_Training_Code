@@ -24,4 +24,10 @@
             <class name="com.automationpractice.test.testcases.TC005_MyWishlist"/>
         </classes>
     </test>
+
+    <test name="Verify shopping Cart page functionality">
+        <classes>
+            <class name="com.automationpractice.test.testcases.TC006_MyShoppingCart"/>
+        </classes>
+    </test>
 </suite>

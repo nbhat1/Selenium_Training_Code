@@ -57,7 +57,6 @@ public class TC004_MyAccount {
         assertEquals(myAccountPage.getCustomerName(),myAccountPage.userNameValue(), "User name value do not match.Please check test again.");
         //assertTrue( myAccountPage.userNameValue.contains("Nraj"), "User Name values do not match.Please check again."); // This assertion will fail as username values do not match
         // Assert.fail( "verifyUserName test failes , please check screenshot." );
-
     }
 
     @AfterClass
