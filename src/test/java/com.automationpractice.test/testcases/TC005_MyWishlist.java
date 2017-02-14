@@ -9,6 +9,7 @@ import org.apache.log4j.Priority;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -45,6 +46,9 @@ public class TC005_MyWishlist {
             tShirtsCategory.closeWishListConfirmationDialog();
             tShirtsCategory.clickMyAccountLink();
             myAccountPage.clickOnWishListButton();
+
+
+
         } catch (NoSuchElementException e) {
         }
     }
@@ -54,6 +58,27 @@ public class TC005_MyWishlist {
         wishList = myAccountPage.clickOnWishListButton();
         wishList.createNewWishList();
         wishList.clickSaveWishListButton();
+        //Assert.assertTrue(wishList.checkWishListAfterAddingNew(), "The text was not present");
+        Assert.assertEquals(wishList.checkWishListAfterAddingNew(), wishList.wishListTitle(), "WishList title does not match");
+    }
+
+    @Test(priority = 2)
+    public void rejectDeleteWishListConformationPopup() throws Exception {
+        wishList = myAccountPage.clickOnWishListButton();
+        wishList.createNewWishList();
+        wishList.clickSaveWishListButton();
+        wishList.rejectDeleteWishlistPopUp();
+        Assert.assertEquals(wishList.checkWishListAfterAddingNew(), wishList.wishListTitle(), "WishList deleted even after rejected delete WishList popup.");
+    }
+
+    @Test(priority = 3)
+    public void deleteWishList() throws Exception {
+        wishList = myAccountPage.clickOnWishListButton();
+        wishList.createNewWishList();
+        wishList.clickSaveWishListButton();
+        wishList.deleteWishListItem();
+        Thread.sleep(2000);
+        Assert.assertFalse(wishList.isWishListTablePresent(), "WishList table present");
     }
 
     @AfterClass

@@ -1,6 +1,8 @@
 package com.automationpractice.test.common;
 
+import com.automationpractice.test.pages.CreateAccountPage;
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.*;
 
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -34,6 +36,7 @@ import static org.openqa.selenium.remote.CapabilityType.*;
 public class CommanFunction {
     //public static WebDriver driver=null;
 
+    static Logger log = Logger.getLogger(CreateAccountPage.class.getName());
     public static WebDriver driver;
     protected static int waitForElementPresentTimeout = 40;
     //private static String appURL = "http://automationpractice.com/index.php";
@@ -93,7 +96,7 @@ public class CommanFunction {
             LoadConfigFile();
             data = properties.getProperty(Data);
         } catch (FileNotFoundException e) {
-            System.out.println("File not found.");
+           log.info("File not found.");
         } catch (IOException e) {
             e.printStackTrace();
 
@@ -185,6 +188,23 @@ public class CommanFunction {
     }
 
     /**
+     * This function will check if an element is present on page.
+     */
+    public boolean isElementPresent(By locator){
+        boolean isPresent = true;
+        try {
+            //waitForElementToBeVisible(locator);
+            driver.findElement(locator);
+            log.info("Element with locator " + locator + " is found.");
+        }catch(org.openqa.selenium.NoSuchElementException e) {
+            log.info("Element with locator " + locator + " is not found.");
+            isPresent = false;
+        }
+        return isPresent;
+    }
+
+
+    /**
      * This is to get the web element
      *
      * @param locator
@@ -228,28 +248,26 @@ public class CommanFunction {
         if (radioButtonState = false) {
             waitForElementToBeVisible(locator).click();
         } else {
-            System.out.println("Radio button / Checkbox is already selected.");
+            log.info("Radio button / Checkbox is already selected.");
         }
     }
 
     /*
     This function will check value of pre-filled text.
-    Get it reviewed by Aditya.
-     */
+    */
 
     public void checkPreFilledTextBoxEntries(By locator, String preFilledEmail) {
         String textValue = waitForElementToBeVisible(locator).getAttribute("value");
         if (textValue.equals(preFilledEmail)) {
-            System.out.println("PreFilled Email is matching");
+            log.info("PreFilled Email is matching");
         } else {
             //Find out how we can use reusable function fillValuesInTextBox to fill email if it ss not matching.
-            System.out.println("values are not Matching");
+            log.info("values are not Matching");
         }
     }
 
     /*
     This function will select value from dropdown list.
-    Get it reviewed by Aditya.
      */
     public void selectValueFromDropDownList(By locator, String dropDownValue) {
         WebElement element = waitForElementToBeVisible(locator);
@@ -335,7 +353,7 @@ public class CommanFunction {
             actions.moveToElement(headerHoverLink).perform();
             text = waitForElementToBeVisible(locator).getText();
         } catch (ElementNotVisibleException e) {
-            System.out.println("Element which user wants to hover over is not present on page");
+            log.info("Element which user wants to hover over is not present on page");
 
         }
         return text;
@@ -353,10 +371,8 @@ public class CommanFunction {
             actions.moveToElement(headerHoverLink).perform();
             waitForElementToBeVisible(locator).click();
         } catch (ElementNotVisibleException e) {
-            System.out.println("Element which user wants to hover over is not present on page");
-
+            log.info("Element which user wants to hover over is not present on page");
         }
-
     }
 
     /**
@@ -369,10 +385,8 @@ public class CommanFunction {
             WebElement headerHoverLink = waitForElementToBeVisible(locator);
             actions.moveToElement(headerHoverLink).perform();
         } catch (ElementNotVisibleException e) {
-            System.out.println("Element which user wants to hover over is not present on page");
-
+            log.info("Element which user wants to hover over is not present on page");
         }
-
     }
 
 
@@ -383,11 +397,9 @@ public class CommanFunction {
         String text = null;
         try {
             text = waitForElementToBeVisible(locator).getText();
-            System.out.println("Tool tip is :" + " " + text);
-
+            log.info("Tool tip is :" + " " + text);
         } catch (ElementNotVisibleException e) {
-            System.out.println("Element not present on page");
-
+            log.info("Element not present on page");
         }
         return text;
     }
@@ -413,13 +425,36 @@ public class CommanFunction {
             mailscreenshotpath = System.getProperty("user.dir") + "\\Screenshots\\" + methodName + "_" + year + "_" + date + "_" + (month + 1) + "_" + day + "_" + min + "_" + sec + ".jpeg";
             FileUtils.copyFile(scrFile, new File(mailscreenshotpath));
         } catch (IOException e) {
-
             e.getMessage();
         }
-
     }
 
 
+    /**
+     * This function will check text on alert massage
+     */
+
+    public String  alertText(){
+        Alert alert = driver.switchTo().alert();
+        String text = alert.getText();
+        return text;
+    }
+
+    /**
+     * This function will accept java script alerts.
+     */
+    public void acceptAlert(){
+        Alert alert = driver.switchTo().alert();
+        alert.accept();
+    }
+
+    /**
+     * This function will reject alert.
+     */
+    public void rejectAlert(){
+        Alert alert = driver.switchTo().alert();
+        alert.dismiss();
+    }
 
 
 }

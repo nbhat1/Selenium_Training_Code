@@ -2,6 +2,7 @@ package com.automationpractice.test.pages;
 
 
 import com.automationpractice.test.common.CommanFunction;
+import com.automationpractice.test.pages.productCategory.DressesCategoryPage;
 import com.automationpractice.test.pages.productCategory.TShirtsCategoryPage;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.*;
@@ -27,7 +28,7 @@ public class MyAccountPage extends CommanFunction {
     private static final By customerName = By.xpath(".//*[@class='account']/span");
     private static final By womenLink = By.xpath("//*[contains(text(), 'Women') and @class='sf-with-ul']");
     //private static final By tShirtLink = By.xpath("//*[contains(text(), 'T-shirts') and @class='sf-with-ul']");
-    private static final By tShirtLink = By.xpath(".//*[@id='block_top_menu']/ul/li[1]/ul/li[1]/ul/li[1]/a");
+    private static final By tShirtLink = By.xpath(".//*[@id='block_top_menu']/ul/li[3]/a");
     private static final By homeButton = By.xpath(".//*[@class='icon-chevron-left']");
     private static final By homeIcon = By.xpath(".//*[@class='icon-home']");
     private static final By addressButton = By.xpath(".//*[@title='Addresses']");
@@ -35,6 +36,7 @@ public class MyAccountPage extends CommanFunction {
     private static final By wishlistIcon = By.xpath(".//*[@class='lnk_wishlist']/a/i");
     private static final By wishListButton = By.xpath(".//*[@class='lnk_wishlist']/a/span");
     private static final By tShirtFromHeader = By.xpath(".//*[@id='block_top_menu']/ul/li[3]/a");
+    private static final By dressesLink = By.xpath(".//*[@id='block_top_menu']/ul/li[2]/a");
 
 
     //public String userNameValue = getConfigFileData("userNameValue");
@@ -221,6 +223,16 @@ public class MyAccountPage extends CommanFunction {
         clickOnLocator(tShirtFromHeader);
         log.info("User clicked" + tShirtFromHeader + "from header");
         return new TShirtsCategoryPage(getDriver());
+    }
+
+    /**
+     * This function will return Dresses page.
+     */
+    public DressesCategoryPage clickOnDressesLink(){
+        waitForElementToBeVisible(dressesLink);
+        clickOnLocator(dressesLink);
+        log.info("User Clicked Dresses Link from header");
+        return new DressesCategoryPage(getDriver());
     }
 
     /**
