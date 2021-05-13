@@ -106,8 +106,6 @@ crashlytics-build.properties
 .springBeans
 .idea
 *.iml
-*.html
-*.xml
 *.ipr
 *.iws
 build/
