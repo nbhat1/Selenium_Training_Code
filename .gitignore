@@ -76,7 +76,7 @@ Temporary Items
 # .idea/mongoSettings.xml
 
 ## File-based project format:
-*.ipr
+*.ipr*
 *.iws
 
 ## Plugin-specific files:
@@ -94,3 +94,27 @@ atlassian-ide-plugin.xml
 com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
+
+/bin/
+/.gradle/
+
+**/target/**
+**/.settings/**
+**/build/**
+.classpath
+.project
+.springBeans
+.idea
+*.iml
+*.html
+*.xml
+*.ipr
+*.iws
+build/
+/classes/
+/current_keystore.pfx
+/current_truststore.jks
+gradle/
+*.class
+
+
